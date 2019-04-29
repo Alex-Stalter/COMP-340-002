@@ -3,4 +3,4 @@ project(ClassExample)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(ClassExample main.cpp)
+add_executable(ClassExample main.cpp Square.cpp Square.h)
