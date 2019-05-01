@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Player.cpp">
+			<Option target="ClassExample"/>
+		</Unit>
+		<Unit filename="/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Player.h">
+			<Option target="ClassExample"/>
+		</Unit>
 		<Unit filename="/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/main.cpp">
 			<Option target="ClassExample"/>
 		</Unit>
