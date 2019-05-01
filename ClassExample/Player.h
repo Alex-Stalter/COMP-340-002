@@ -13,22 +13,25 @@ public:
     ~Player();
 
     std::string getName();
-    std::vector<Item*> getInventory();
+    //std::vector<Item*> getInventory();
 
 
     int getHealth();
     int getAttack();
+    bool isStunned();
 
     //functions for changing the health and attack
     void setDamage(int attack);
     void setHealth(int health);
     void damageHealth(int damage);
-    void addItem(Item* loot);
+    //void addItem(Item* loot);
+    void setStun(bool stun);
 private:
     std::string name;
-    std::vector<Item*> Inventory;
+    //std::vector<Item*> Inventory;
     int health;
     int attackDamage;
+    bool stunned;
 
 };
 

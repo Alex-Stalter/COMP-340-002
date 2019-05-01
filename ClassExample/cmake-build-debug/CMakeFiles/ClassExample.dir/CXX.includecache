@@ -6,7 +6,17 @@
 
 #IncludeRegexTransform: 
 
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Player.cpp
+Player.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Player.h
+
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Player.h
+iostream
+-
+
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/main.cpp
 iostream
 -
+Player.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Player.h
 
