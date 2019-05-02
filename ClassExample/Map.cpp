@@ -14,7 +14,7 @@ Map::~Map(){
 
 }
 void Map::createRooms(){
-    Enemy* newGoblin = new Goblin(0,0,"Brute");
+    /*Enemy* newGoblin = new Goblin(0,0,"Brute");
     Enemy* newSkeleton = new Skeleton(0,0,"Archer");
     Enemy* newSlime = new Slime(0,0,"Fire");
     Enemy* newZombie = new Zombie(0,0,"Goliath");
@@ -30,24 +30,24 @@ void Map::createRooms(){
     Chest* swordChest = new Chest(newSword);
     Chest* armorChest = new Chest(newArmor);
     Chest* healthChest = new Chest(healthPotion);
-    Chest* strengthChest = new Chest(strengthPotion);
+    Chest* strengthChest = new Chest(strengthPotion);*/
 
-    Room* one = new Room("a room with nothing of interest but is it a great starting point. The Room has four doors that all seem unlocked.",false,false, nullptr, nullptr);
-    Room* two = new Room("a room with one door leading back to where you came there is moss all over the walls and a slow drip of a red liquid in the corner.",false,false, armorChest, nullptr);
-    Room* three = new Room("a room with a door to the north and to the south. The room is weirdly clean.",false,false, nullptr, nullptr);
-    Room* four = new Room("a room with a door to the east and what appears to be a locked door to the west. The door has strange markings on it.",false,false, nullptr, nullptr);
-    Room* five = new Room("a room with a door in all four directions but the door to the south appears to be locked.",false,false, nullptr, newGoblin);
-    Room* six = new Room("a room with a small lump in the middle of the room and a door leading to where you came from.",false,false, strengthChest, nullptr);
-    Room* seven = new Room("a room with a door to the north and west. there is very little in this room that is significant.",false,false, nullptr, newSkeleton);
-    Room* eight = new Room("a room with two small structures in the very center of the room. You can see strange light coming from each of the four corners.",false,true, healthChest, nullptr);
-    Room* nine = new Room("a room with doors leading to the north and to the south, there is a creature sitting in the middle of the room.",false,false, nullptr, newSlime);
-    Room* ten = new Room("a room with doors in all directions and you can hear a creature moving around in the darkness.",false,false, nullptr, newZombie);
-    Room* eleven = new Room("a room with one door leading back to where you came from. You can feel something watching you from the shadows.",false,false, nullptr, newSpecter);
-    Room* twelve = new Room("a room with a small lump in the center of the room covered in moss.",false,false, swordChest, nullptr);
-    Room* thirteen = new Room("a room with one door leading back north and very little of interest inside, there appears to be a smashed chest in the center and bones of a long dead traveler.",false,false, nullptr, newSpider);
-    Room* fourteen = new Room("a room that appears to be some sort of guards room there are destroyed helmets shields and armor around and a desk up against one wall with the words run etched into the wall.",true,true, nullptr, nullptr);
+    Room* one = new Room("a room with nothing of interest but is it a great starting point. The Room has four doors that all seem unlocked.",false,false/*, nullptr, nullptr*/);
+    Room* two = new Room("a room with one door leading back to where you came there is moss all over the walls and a slow drip of a red liquid in the corner.",false,false/*, armorChest, nullptr*/);
+    Room* three = new Room("a room with a door to the north and to the south. The room is weirdly clean.",false,false/*, nullptr, nullptr*/);
+    Room* four = new Room("a room with a door to the east and what appears to be a locked door to the west. The door has strange markings on it.",false,false/*, nullptr, nullptr*/);
+    Room* five = new Room("a room with a door in all four directions but the door to the south appears to be locked.",false,false/*, nullptr,newGoblin*/);
+    Room* six = new Room("a room with a small lump in the middle of the room and a door leading to where you came from.",false,false/*, strengthChest, nullptr*/);
+    Room* seven = new Room("a room with a door to the north and west. there is very little in this room that is significant.",false,false /*,nullptr, newSkeleton*/);
+    Room* eight = new Room("a room with two small structures in the very center of the room. You can see strange light coming from each of the four corners.",false,true /*,healthChest, nullptr*/);
+    Room* nine = new Room("a room with doors leading to the north and to the south, there is a creature sitting in the middle of the room.",false,false/*, nullptr, newSlime*/);
+    Room* ten = new Room("a room with doors in all directions and you can hear a creature moving around in the darkness.",false,false/*, nullptr, newZombie*/);
+    Room* eleven = new Room("a room with one door leading back to where you came from. You can feel something watching you from the shadows.",false,false/*, nullptr, newSpecter*/);
+    Room* twelve = new Room("a room with a small lump in the center of the room covered in moss.",false,false/*, swordChest, nullptr*/);
+    Room* thirteen = new Room("a room with one door leading back north and very little of interest inside, there appears to be a smashed chest in the center and bones of a long dead traveler.",false,false/*, nullptr, newSpider*/);
+    Room* fourteen = new Room("a room that appears to be some sort of guards room there are destroyed helmets shields and armor around and a desk up against one wall with the words run etched into the wall.",true,true/*, nullptr, nullptr*/);
     Room* bossRoom = new Room("a room with a giant monster in the center and the door has sealed shut behind you. You feel dread sink in as the beast in front \n"
-                              "of you rears its head to greet you. This is your final stand.",true,false, nullptr, boss);
+                              "of you rears its head to greet you. This is your final stand.",true,false/*, nullptr, boss*/);
     this->roomList.push_back(one);
     this->roomList.push_back(two);
     this->roomList.push_back(three);
