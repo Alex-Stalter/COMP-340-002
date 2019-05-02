@@ -4,12 +4,11 @@
 
 #include "Room.h"
 
-Room::Room(std::string description, bool locked, bool hasKey /*Chest* chest, Enemy* enemy*/){
+Room::Room(std::string description, bool locked, bool hasKey ){
     this->description = description;
     this->locked = locked;
     this->hasKey = hasKey;
-    //this->chest = chest;
-    //this->enemy = enemy;
+
 
 }
 Room::~Room(){}
@@ -72,20 +71,3 @@ void Room::setKey(bool key) {
 
 }
 
-/*void Room::setChest(Chest *chest) {
-    this->chest = chest;
-}
-
-Enemy *Room::getEnemy() {
-    return this->enemy;
-}
-
-void Room::killEnemy() {
-    this->enemy = nullptr;
-
-}
-
-Chest *Room::getChest() {
-    return this->chest;
-}
-*/
