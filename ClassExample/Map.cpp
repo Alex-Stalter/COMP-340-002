@@ -14,23 +14,7 @@ Map::~Map(){
 
 }
 void Map::createRooms(){
-    /*Enemy* newGoblin = new Goblin(0,0,"Brute");
-    Enemy* newSkeleton = new Skeleton(0,0,"Archer");
-    Enemy* newSlime = new Slime(0,0,"Fire");
-    Enemy* newZombie = new Zombie(0,0,"Goliath");
-    Enemy* newSpecter = new Goblin(0,0,"Ancient");
-    Enemy* newSpider = new Spider(0,0,"Giant");
-    Enemy* boss = new Boss(250,15);
 
-    Item* newSword = new Sword("Silver Sword",20);
-    Item* newArmor = new Armor("Shiny Breastplate", 50);
-    Item* healthPotion = new Potion("Medium Health Potion", 30);
-    Item* strengthPotion = new Potion("Strength Potion", 15);
-
-    Chest* swordChest = new Chest(newSword);
-    Chest* armorChest = new Chest(newArmor);
-    Chest* healthChest = new Chest(healthPotion);
-    Chest* strengthChest = new Chest(strengthPotion);*/
 
     Room* one = new Room("a room with nothing of interest but is it a great starting point. The Room has four doors that all seem unlocked.",false,false/*, nullptr, nullptr*/);
     Room* two = new Room("a room with one door leading back to where you came there is moss all over the walls and a slow drip of a red liquid in the corner.",false,false/*, armorChest, nullptr*/);
