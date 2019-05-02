@@ -3,4 +3,4 @@ project(ClassExample)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(ClassExample main.cpp Player.cpp Player.h)
+add_executable(ClassExample main.cpp Player.cpp Player.h Map.cpp Map.h Room.cpp Room.h)
