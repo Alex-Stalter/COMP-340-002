@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.cpp" "/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir/Enemy.cpp.o"
+  "/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.cpp" "/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir/Item.cpp.o"
   "/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Map.cpp" "/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir/Map.cpp.o"
   "/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Player.cpp" "/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir/Player.cpp.o"
   "/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Room.cpp" "/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir/Room.cpp.o"

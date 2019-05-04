@@ -109,12 +109,40 @@ CMakeFiles/ClassExample.dir/Room.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClassExample.dir/Room.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Room.cpp -o CMakeFiles/ClassExample.dir/Room.cpp.s
 
+CMakeFiles/ClassExample.dir/Item.cpp.o: CMakeFiles/ClassExample.dir/flags.make
+CMakeFiles/ClassExample.dir/Item.cpp.o: ../Item.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ClassExample.dir/Item.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClassExample.dir/Item.cpp.o -c /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.cpp
+
+CMakeFiles/ClassExample.dir/Item.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClassExample.dir/Item.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.cpp > CMakeFiles/ClassExample.dir/Item.cpp.i
+
+CMakeFiles/ClassExample.dir/Item.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClassExample.dir/Item.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.cpp -o CMakeFiles/ClassExample.dir/Item.cpp.s
+
+CMakeFiles/ClassExample.dir/Enemy.cpp.o: CMakeFiles/ClassExample.dir/flags.make
+CMakeFiles/ClassExample.dir/Enemy.cpp.o: ../Enemy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ClassExample.dir/Enemy.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClassExample.dir/Enemy.cpp.o -c /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.cpp
+
+CMakeFiles/ClassExample.dir/Enemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClassExample.dir/Enemy.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.cpp > CMakeFiles/ClassExample.dir/Enemy.cpp.i
+
+CMakeFiles/ClassExample.dir/Enemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClassExample.dir/Enemy.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.cpp -o CMakeFiles/ClassExample.dir/Enemy.cpp.s
+
 # Object files for target ClassExample
 ClassExample_OBJECTS = \
 "CMakeFiles/ClassExample.dir/main.cpp.o" \
 "CMakeFiles/ClassExample.dir/Player.cpp.o" \
 "CMakeFiles/ClassExample.dir/Map.cpp.o" \
-"CMakeFiles/ClassExample.dir/Room.cpp.o"
+"CMakeFiles/ClassExample.dir/Room.cpp.o" \
+"CMakeFiles/ClassExample.dir/Item.cpp.o" \
+"CMakeFiles/ClassExample.dir/Enemy.cpp.o"
 
 # External object files for target ClassExample
 ClassExample_EXTERNAL_OBJECTS =
@@ -123,9 +151,11 @@ ClassExample: CMakeFiles/ClassExample.dir/main.cpp.o
 ClassExample: CMakeFiles/ClassExample.dir/Player.cpp.o
 ClassExample: CMakeFiles/ClassExample.dir/Map.cpp.o
 ClassExample: CMakeFiles/ClassExample.dir/Room.cpp.o
+ClassExample: CMakeFiles/ClassExample.dir/Item.cpp.o
+ClassExample: CMakeFiles/ClassExample.dir/Enemy.cpp.o
 ClassExample: CMakeFiles/ClassExample.dir/build.make
 ClassExample: CMakeFiles/ClassExample.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ClassExample"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ClassExample"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ClassExample.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -80,6 +80,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.cpp">
+			<Option target="ClassExample"/>
+		</Unit>
+		<Unit filename="/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.h">
+			<Option target="ClassExample"/>
+		</Unit>
+		<Unit filename="/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.cpp">
+			<Option target="ClassExample"/>
+		</Unit>
+		<Unit filename="/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h">
+			<Option target="ClassExample"/>
+		</Unit>
 		<Unit filename="/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Map.cpp">
 			<Option target="ClassExample"/>
 		</Unit>
