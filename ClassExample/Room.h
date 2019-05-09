@@ -12,7 +12,7 @@
 
 class Room {
 public:
-    Room(std::string description, bool locked, bool hasKey, /*Chest* chest, Enemy* enemy*/);
+    Room(std::string description, bool locked, bool hasKey /*,Chest* chest, Enemy* enemy*/);
     ~Room();
     std::string getDescription();
     Room* getRoom(std::string direction);

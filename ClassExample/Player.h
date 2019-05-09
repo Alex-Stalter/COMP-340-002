@@ -5,6 +5,8 @@
 #ifndef CLASSEXAMPLE_PLAYER_H
 #define CLASSEXAMPLE_PLAYER_H
 #include <iostream>
+#include <vector>
+#include "Item.h"
 
 
 class Player {
@@ -24,11 +26,11 @@ public:
     void setDamage(int attack);
     void setHealth(int health);
     void damageHealth(int damage);
-    //void addItem(Item* loot);
+    void addItem(Item* loot);
     void setStun(bool stun);
 private:
     std::string name;
-    //std::vector<Item*> Inventory;
+    std::vector<Item*> Inventory;
     int health;
     int attackDamage;
     bool stunned;
