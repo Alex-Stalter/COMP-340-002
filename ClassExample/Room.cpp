@@ -71,3 +71,7 @@ void Room::setKey(bool key) {
 
 }
 
+void Room::killEnemy() {
+
+}
+

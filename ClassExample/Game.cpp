@@ -26,7 +26,9 @@ void Game::combat() {
 }
 
 void Game::instatiateGame() {
-    std::cout<<"."<<std::endl;
+    std::cout<<"Your ship jumps into the sector and the radar lights up with obstacles throughout the system. \n"
+               "Your mission is to reach the blockade in this sector and free the sector from rebel control before \n"
+               "the system is drained of its resources."<<std::endl;
     this->currentRoom = this->newMap->getList()[0];
     std::cout<<"You are in "<< this->currentRoom->getDescription() << std::endl;
     while(this->userInput != "Give Up"){
