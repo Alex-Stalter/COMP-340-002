@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ClassExample.dir/Room.cpp.o"
   "CMakeFiles/ClassExample.dir/Item.cpp.o"
   "CMakeFiles/ClassExample.dir/Enemy.cpp.o"
+  "CMakeFiles/ClassExample.dir/Game.cpp.o"
   "ClassExample.pdb"
   "ClassExample"
 )
