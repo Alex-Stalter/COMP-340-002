@@ -18,8 +18,7 @@ private:
     std::string userInput;
     Player* newPlayer;
     Map* newMap;
-    bool hasStrength;
-    bool hasHealthPot;
+    
 };
 
 
