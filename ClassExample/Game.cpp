@@ -9,8 +9,7 @@ Game::Game(){
     this->userInput = "";
     this->newPlayer = new Player("Alex");
     this->newMap = new Map(newPlayer);
-    this->hasHealthPot = false;
-    this->hasStrength = false;
+
     instatiateGame();
 
 }
