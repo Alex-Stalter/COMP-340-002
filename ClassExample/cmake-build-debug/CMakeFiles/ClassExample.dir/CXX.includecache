@@ -6,35 +6,90 @@
 
 #IncludeRegexTransform: 
 
-/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
+<<<<<<< HEAD
+C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Enemy.cpp
+Enemy.h
+C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Enemy.h
+
+C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Enemy.h
 string
 -
 iostream
 -
 
+C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Game.cpp
+iostream
+-
+Game.h
+C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Game.h
+
+C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Game.h
+Map.h
+C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Map.h
+
+C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Item.cpp
+Item.h
+C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Item.h
+
+C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Item.h
+=======
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
+>>>>>>> master
+string
+-
+iostream
+-
+
+<<<<<<< HEAD
+C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Map.cpp
+Map.h
+C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Map.h
+
+C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Map.h
+=======
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Map.cpp
 Map.h
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Map.h
 
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Map.h
+>>>>>>> master
 Room.h
-/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Room.h
+C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Room.h
 Player.h
-/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Player.h
+C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Player.h
 vector
 -
 
-/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Player.h
+C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Player.cpp
+Player.h
+C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Player.h
+
+C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Player.h
 iostream
 -
 vector
 -
 Item.h
-/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
+C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Item.h
 
-/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Room.h
+C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Room.cpp
+Room.h
+C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Room.h
+
+C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Room.h
 string
 -
 iostream
 -
 
+<<<<<<< HEAD
+C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/main.cpp
+iostream
+-
+Player.h
+C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Player.h
+Game.h
+C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Game.h
+
+=======
+>>>>>>> master
