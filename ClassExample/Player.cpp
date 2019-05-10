@@ -4,14 +4,16 @@
 
 #include "Player.h"
 
-Player::Player(std::string playerName) {
-    this->name = playerName;
+Player::Player() {
     this->health = 100;
     this->attackDamage = 15;
 }
 Player::~Player(){
-
 }
+void Player::setName(std::string name) {
+    this->name = name;
+}
+
 std::string  Player::getName(){
     return this->name;
 }

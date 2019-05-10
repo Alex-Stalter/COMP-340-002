@@ -11,9 +11,10 @@
 
 class Player {
 public:
-    Player(std::string name);
+    Player();
     ~Player();
 
+    void setName(std::string name);
     std::string getName();
     //std::vector<Item*> getInventory();
 
