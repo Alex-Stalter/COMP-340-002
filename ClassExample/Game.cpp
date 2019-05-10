@@ -9,6 +9,7 @@ Game::Game(){
     this->userInput = "";
     this->newPlayer = new Player();
     this->newMap = new Map(newPlayer);
+<<<<<<< HEAD
     this->hasHealthPot = false;
     this->hasStrength = false;
 
@@ -18,6 +19,8 @@ Game::Game(){
     std::getline(std::cin, userInput);
     newPlayer->setName(userInput);
     std::cout << "Beware on your adventure, " << newPlayer->getName() << ".\n~~~~~~~\n"<<std::endl;
+=======
+>>>>>>> master
 
     instatiateGame();
 
