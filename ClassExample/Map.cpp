@@ -60,12 +60,12 @@ void Map::setDirection(){
     this->roomList[5]->setRoom(roomList[10],roomList[6],roomList[2],roomList[4]);
     this->roomList[6]->setRoom(roomList[9],roomList[7],roomList[1],roomList[5]);
     this->roomList[7]->setRoom(roomList[8],nullptr,roomList[0],roomList[6]);
-    this->roomList[8]->setRoom(roomList[15], nullptr,roomList[7],roomList[6]);
+    this->roomList[8]->setRoom(roomList[15], nullptr,roomList[7],roomList[9]);
     this->roomList[9]->setRoom(roomList[14],roomList[8],roomList[6],roomList[10]);
     this->roomList[10]->setRoom(roomList[13],roomList[9],roomList[5],roomList[11]);
     this->roomList[11]->setRoom(roomList[12],roomList[10],roomList[9],nullptr);
     this->roomList[12]->setRoom(nullptr,roomList[13],roomList[11], nullptr);
-    this->roomList[13]->setRoom(nullptr,roomList[14],roomList[10],roomList[14]);
+    this->roomList[13]->setRoom(nullptr,roomList[14],roomList[10],roomList[12]);
     this->roomList[14]->setRoom(nullptr,roomList[15],roomList[9],roomList[13]);
     this->roomList[15]->setRoom(nullptr,nullptr,roomList[8],roomList[14]);
 

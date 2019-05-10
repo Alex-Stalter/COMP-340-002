@@ -6,6 +6,7 @@
 
 #IncludeRegexTransform: 
 
+<<<<<<< HEAD
 C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Enemy.cpp
 Enemy.h
 C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Enemy.h
@@ -31,16 +32,27 @@ Item.h
 C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Item.h
 
 C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Item.h
+=======
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
+>>>>>>> master
 string
 -
 iostream
 -
 
+<<<<<<< HEAD
 C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Map.cpp
 Map.h
 C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Map.h
 
 C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Map.h
+=======
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Map.cpp
+Map.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Map.h
+
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Map.h
+>>>>>>> master
 Room.h
 C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Room.h
 Player.h
@@ -70,6 +82,7 @@ string
 iostream
 -
 
+<<<<<<< HEAD
 C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/main.cpp
 iostream
 -
@@ -78,3 +91,5 @@ C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Player.h
 Game.h
 C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Game.h
 
+=======
+>>>>>>> master
