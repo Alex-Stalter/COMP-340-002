@@ -7,10 +7,18 @@
 Game::Game(){
     this->currentRoom= nullptr;
     this->userInput = "";
-    this->newPlayer = new Player("Alex");
+    this->newPlayer = new Player();
     this->newMap = new Map(newPlayer);
     this->hasHealthPot = false;
     this->hasStrength = false;
+
+
+    //get userInput for player name
+    std::cout << "Enter player name:  ";
+    std::getline(std::cin, userInput);
+    newPlayer->setName(userInput);
+    std::cout << "Beware on your adventure, " << newPlayer->getName() << ".\n~~~~~~~\n"<<std::endl;
+
     instatiateGame();
 
 }
