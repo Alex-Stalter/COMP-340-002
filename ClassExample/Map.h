@@ -7,6 +7,9 @@
 #include "Room.h"
 #include "Player.h"
 #include <vector>
+#include "ItemContainer.h"
+#include "Enemy.h"
+#include "Item.h"
 //Map is a large class that sets up the environment of the entire game and is where enemies items chests and rooms are created
 class Map {
 

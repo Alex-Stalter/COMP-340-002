@@ -22,6 +22,7 @@ public:
     int getHealth();
     int getAttack();
     bool isStunned();
+    std::vector<Item*> getInventory();
 
     //functions for changing the health and attack
     void setDamage(int attack);

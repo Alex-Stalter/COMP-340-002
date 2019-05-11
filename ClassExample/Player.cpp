@@ -38,3 +38,12 @@ bool Player::isStunned(){
 void Player::setStun(bool stun){
     this->stunned = stun;
 }
+
+std::vector<Item*> Player::getInventory() {
+    return this->Inventory;
+}
+
+void Player::addItem(Item *loot) {
+    this->Inventory.push_back(loot);
+
+}
