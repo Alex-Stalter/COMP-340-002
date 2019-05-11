@@ -5,6 +5,7 @@ CMakeFiles/ClassExample.dir/Enemy.cpp.o
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.cpp
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.h
 CMakeFiles/ClassExample.dir/Game.cpp.o
+ /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Game.cpp
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Game.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
@@ -14,7 +15,12 @@ CMakeFiles/ClassExample.dir/Game.cpp.o
 CMakeFiles/ClassExample.dir/Item.cpp.o
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.cpp
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
+CMakeFiles/ClassExample.dir/ItemContainer.cpp.o
+ /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
+ /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/ItemContainer.cpp
+ /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/ItemContainer.h
 CMakeFiles/ClassExample.dir/Map.cpp.o
+ /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Map.cpp
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Map.h
@@ -25,9 +31,11 @@ CMakeFiles/ClassExample.dir/Player.cpp.o
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Player.cpp
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Player.h
 CMakeFiles/ClassExample.dir/Room.cpp.o
+ /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Room.cpp
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Room.h
 CMakeFiles/ClassExample.dir/main.cpp.o
+ /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Game.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Map.h

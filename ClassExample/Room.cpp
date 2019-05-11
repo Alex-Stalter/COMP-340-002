@@ -4,10 +4,10 @@
 
 #include "Room.h"
 
-Room::Room(std::string description, bool locked, bool hasKey ){
+Room::Room(std::string description, bool locked,Enemy* enemy){
     this->description = description;
     this->locked = locked;
-    this->hasKey = hasKey;
+    this->enemy = enemy;
 
 
 }
@@ -73,5 +73,10 @@ void Room::setKey(bool key) {
 
 void Room::killEnemy() {
 
+    this->enemy = nullptr;
+}
+
+Enemy *Room::getEnemy() {
+    return this->enemy;
 }
 

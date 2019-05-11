@@ -7,6 +7,7 @@
 Game::Game(){
     this->currentRoom= nullptr;
     this->userInput = "";
+    this->secondInput = "";
     this->newPlayer = new Player();
     this->newMap = new Map(newPlayer);
 
@@ -42,11 +43,14 @@ void Game::instatiateGame() {
         if(this->newPlayer->getHealth()<=0){
             break;
         }
-        std::cout<<"What would you like to do or where would you like to go? You can always just 'Give Up'."<<std::endl;
-        //std::getline(std::cin, this->userInput);
-        std::cin>>userInput;
-         if(this->userInput=="Search"){
+        std::cout<<"What would you like to do or where would you like to go? You can always just 'Give Up'. To see a list of commands type "
+                   "'Get Help'"<<std::endl;
 
+        std::cin>>userInput>>secondInput;
+         if(this->userInput=="Search"){
+            if(this->secondInput=="chest"){
+                std::cout<<"You found a map"<<std::endl;
+            }
 
         }else if(this->userInput == "Take"){
 
@@ -60,13 +64,24 @@ void Game::instatiateGame() {
         }else if(this->userInput == "Inventory"){
 
 
-        }else if(this->userInput=="GiveUp"){
+        }else if(this->userInput=="Give" && this->secondInput=="Up"){
             break;
-        }else{
-            this->currentRoom = this->currentRoom->getRoom(this->userInput);
-            /*if(this->currentRoom->getEnemy()!= nullptr) {
+        }else if(this->userInput=="Use"){
+             break;
+         }else if(this->userInput=="Get" && this->secondInput=="Help"){
+             std::cout<<"Commands:\n"
+                        "Go {Cardinal Direction 'North','East','South','West'}\n"
+                        "Search {searchable item}\n"
+                        "Take {Item}\n"
+                        "Open {Used for opening blockades in different sectors when the correct key is held}\n"
+                        "Look Around {Displays the room description again}\n"
+                        "Give Up {exits the game}\n"
+                        "Use {Item in inventory}"<<std::endl;
+         }else{
+            this->currentRoom = this->currentRoom->getRoom(this->secondInput);
+            if(this->currentRoom->getEnemy()!= nullptr) {
                 combat();
-            }*/
+            }
 
 
         }

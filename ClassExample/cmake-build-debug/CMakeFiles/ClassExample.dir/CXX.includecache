@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.h
+string
+-
+iostream
+-
+
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Game.cpp
 iostream
 -
@@ -21,6 +27,18 @@ string
 -
 iostream
 -
+
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/ItemContainer.cpp
+ItemContainer.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/ItemContainer.h
+
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/ItemContainer.h
+Item.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
+
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Map.cpp
+Map.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Map.h
 
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Map.h
 Room.h
@@ -38,9 +56,23 @@ vector
 Item.h
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
 
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Room.cpp
+Room.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Room.h
+
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Room.h
 string
 -
 iostream
 -
+Enemy.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.h
+
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/main.cpp
+iostream
+-
+Player.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Player.h
+Game.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Game.h
 

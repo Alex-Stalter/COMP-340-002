@@ -16,6 +16,7 @@ public:
 private:
     Room* currentRoom;
     std::string userInput;
+    std::string secondInput;
     Player* newPlayer;
     Map* newMap;
     

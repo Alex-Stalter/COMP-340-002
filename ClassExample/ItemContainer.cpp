@@ -3,3 +3,15 @@
 //
 
 #include "ItemContainer.h"
+
+ItemContainer::ItemContainer(Item *loot) {
+    this->loot = loot;
+}
+
+ItemContainer::~ItemContainer() {
+
+}
+
+Item* ItemContainer::getItem() {
+    return this->loot;
+}

@@ -98,6 +98,12 @@
 		<Unit filename="/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h">
 			<Option target="ClassExample"/>
 		</Unit>
+		<Unit filename="/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/ItemContainer.cpp">
+			<Option target="ClassExample"/>
+		</Unit>
+		<Unit filename="/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/ItemContainer.h">
+			<Option target="ClassExample"/>
+		</Unit>
 		<Unit filename="/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Map.cpp">
 			<Option target="ClassExample"/>
 		</Unit>

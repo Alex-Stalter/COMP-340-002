@@ -204,6 +204,33 @@ Item.cpp.s:
 	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/Item.cpp.s
 .PHONY : Item.cpp.s
 
+ItemContainer.o: ItemContainer.cpp.o
+
+.PHONY : ItemContainer.o
+
+# target to build an object file
+ItemContainer.cpp.o:
+	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/ItemContainer.cpp.o
+.PHONY : ItemContainer.cpp.o
+
+ItemContainer.i: ItemContainer.cpp.i
+
+.PHONY : ItemContainer.i
+
+# target to preprocess a source file
+ItemContainer.cpp.i:
+	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/ItemContainer.cpp.i
+.PHONY : ItemContainer.cpp.i
+
+ItemContainer.s: ItemContainer.cpp.s
+
+.PHONY : ItemContainer.s
+
+# target to generate assembly for a file
+ItemContainer.cpp.s:
+	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/ItemContainer.cpp.s
+.PHONY : ItemContainer.cpp.s
+
 Map.o: Map.cpp.o
 
 .PHONY : Map.o
@@ -330,6 +357,9 @@ help:
 	@echo "... Item.o"
 	@echo "... Item.i"
 	@echo "... Item.s"
+	@echo "... ItemContainer.o"
+	@echo "... ItemContainer.i"
+	@echo "... ItemContainer.s"
 	@echo "... Map.o"
 	@echo "... Map.i"
 	@echo "... Map.s"

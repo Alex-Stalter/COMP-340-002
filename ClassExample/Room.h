@@ -6,17 +6,16 @@
 #define TEXTADVENTURE_ROOM_H
 #include <string>
 #include <iostream>
-//#include "Chest.h"
-//#include "Enemy.h"
+#include "Enemy.h"
 //Rooms are an essential building block to the advneture they hold values such as chests enemies and pointers to the other rooms in the dungeon
 
 class Room {
 public:
-    Room(std::string description, bool locked, bool hasKey /*,Chest* chest, Enemy* enemy*/);
+    Room(std::string description, bool locked,Enemy* enemy);
     ~Room();
     std::string getDescription();
     Room* getRoom(std::string direction);
-    //Enemy* getEnemy();
+    Enemy* getEnemy();
     //Chest* getChest();
     bool isLocked();
     bool key();
@@ -37,8 +36,7 @@ private:
     Room* eastRoom;
     Room* southRoom;
     Room* westRoom;
-    //Chest* chest;
-    //Enemy* enemy;
+    Enemy* enemy;
 };
 
 

@@ -16,22 +16,22 @@ Map::~Map(){
 void Map::createRooms(){
 
 
-    Room* one = new Room("Sector 1: Planet X",false,false);
-    Room* two = new Room("Sector 2: Callisto",false,false);
-    Room* three = new Room("Sector 3: Geminids",false,false);
-    Room* four = new Room("Sector 4: Titan",false,false);
-    Room* five = new Room("Sector 5: Orion Nebula",false,false);
-    Room* six = new Room("Sector 6: Enceladus",false,false);
-    Room* seven = new Room("Sector 7: Horesehead Nebula",false,false );
-    Room* eight = new Room("Sector 8: Helix",false,false);
-    Room* nine = new Room("Sector 9: Perseus",false,false);
-    Room* ten = new Room("Sector 10: Andromeda galaxy",false,false);
-    Room* eleven = new Room("Sector 11: Big dipper",false,false);
-    Room* twelve = new Room("Sector 12: Black Hole!!",false,false);
-    Room* thirteen = new Room("Sector 13: Astroid field",false,false);
-    Room* fourteen = new Room("Sector 14: Orion's Belt",false,false);
-    Room* fifteen = new Room("Sector 15: Phobos",false,false);
-    Room* sixteen = new Room("Sector 16: Kepler 452b",false,false);
+    Room* one = new Room("Sector 1: Planet X",false, nullptr);
+    Room* two = new Room("Sector 2: Callisto",false, nullptr);
+    Room* three = new Room("Sector 3: Geminids",false, nullptr);
+    Room* four = new Room("Sector 4: Titan",false, nullptr);
+    Room* five = new Room("Sector 5: Orion Nebula",false, nullptr);
+    Room* six = new Room("Sector 6: Enceladus",false, nullptr);
+    Room* seven = new Room("Sector 7: Horesehead Nebula",false, nullptr );
+    Room* eight = new Room("Sector 8: Helix",false, nullptr);
+    Room* nine = new Room("Sector 9: Perseus",false, nullptr);
+    Room* ten = new Room("Sector 10: Andromeda galaxy",false, nullptr);
+    Room* eleven = new Room("Sector 11: Big dipper",false, nullptr);
+    Room* twelve = new Room("Sector 12: Black Hole!!",false, nullptr);
+    Room* thirteen = new Room("Sector 13: Astroid field",false, nullptr);
+    Room* fourteen = new Room("Sector 14: Orion's Belt",false, nullptr);
+    Room* fifteen = new Room("Sector 15: Phobos",false, nullptr);
+    Room* sixteen = new Room("Sector 16: Kepler 452b",false, nullptr);
     this->roomList.push_back(one);
     this->roomList.push_back(two);
     this->roomList.push_back(three);

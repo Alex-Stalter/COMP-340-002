@@ -4,9 +4,17 @@
 
 #ifndef CLASSEXAMPLE_ITEMCONTAINER_H
 #define CLASSEXAMPLE_ITEMCONTAINER_H
+#include "Item.h"
 
 
 class ItemContainer {
+public:
+    ItemContainer(Item* loot);
+    ~ItemContainer();
+    Item* getItem();
+
+private:
+    Item* loot;
 
 };
 
