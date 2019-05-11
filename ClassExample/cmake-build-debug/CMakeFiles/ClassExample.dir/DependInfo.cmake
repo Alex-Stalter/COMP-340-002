@@ -4,25 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-<<<<<<< HEAD
-  "/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Enemy.cpp" "/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir/Enemy.cpp.o"
-  "/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Game.cpp" "/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir/Game.cpp.o"
-  "/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Item.cpp" "/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir/Item.cpp.o"
-  "/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Map.cpp" "/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir/Map.cpp.o"
-  "/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Player.cpp" "/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir/Player.cpp.o"
-  "/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Room.cpp" "/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir/Room.cpp.o"
-  "/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/main.cpp" "/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir/main.cpp.o"
-=======
-  "C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Enemy.cpp" "C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir/Enemy.cpp.obj"
-  "C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Game.cpp" "C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir/Game.cpp.obj"
-  "C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Item.cpp" "C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir/Item.cpp.obj"
-  "C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Map.cpp" "C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir/Map.cpp.obj"
-  "C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Player.cpp" "C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir/Player.cpp.obj"
-  "C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/Room.cpp" "C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir/Room.cpp.obj"
-  "C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/main.cpp" "C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir/main.cpp.obj"
->>>>>>> master
+  "/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.cpp" "/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir/Enemy.cpp.o"
+  "/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Game.cpp" "/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir/Game.cpp.o"
+  "/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.cpp" "/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir/Item.cpp.o"
+  "/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Map.cpp" "/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir/Map.cpp.o"
+  "/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Player.cpp" "/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir/Player.cpp.o"
+  "/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Room.cpp" "/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir/Room.cpp.o"
+  "/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/main.cpp" "/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir/main.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

@@ -1,12 +1,8 @@
-<<<<<<< HEAD
-# Install script for directory: /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample
-=======
-# Install script for directory: C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample
->>>>>>> master
+# Install script for directory: /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/ClassExample")
+  set(CMAKE_INSTALL_PREFIX "/usr/local")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,9 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-<<<<<<< HEAD
-file(WRITE "/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
-=======
-file(WRITE "C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
->>>>>>> master
+file(WRITE "/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
