@@ -43,7 +43,8 @@ void Game::instatiateGame() {
             break;
         }
         std::cout<<"What would you like to do or where would you like to go? You can always just 'Give Up'."<<std::endl;
-        std::getline(std::cin, this->userInput);
+        //std::getline(std::cin, this->userInput);
+        std::cin>>userInput;
          if(this->userInput=="Search"){
 
 
@@ -59,7 +60,7 @@ void Game::instatiateGame() {
         }else if(this->userInput == "Inventory"){
 
 
-        }else if(this->userInput=="Give Up"){
+        }else if(this->userInput=="GiveUp"){
             break;
         }else{
             this->currentRoom = this->currentRoom->getRoom(this->userInput);
