@@ -4,9 +4,10 @@
 
 #include "Enemy.h"
 
-Enemy::Enemy(int health, int attack) {
+Enemy::Enemy(int health, int attack, Item* loot) {
     this->health = health;
     this->attack = attack;
+    this->loot = loot;
 }
 void Enemy::setHealth(int hp){
     this->health = hp;
@@ -20,4 +21,8 @@ int Enemy::getHealth(){
 }
 int Enemy::getAttack(){
     return this->attack;
+}
+
+Item *Enemy::getItem() {
+    return this->loot;
 }

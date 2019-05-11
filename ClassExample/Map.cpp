@@ -16,22 +16,23 @@ Map::~Map(){
 void Map::createRooms(){
 
 
-    Room* one = new Room("Sector 1: Planet X",false, nullptr);
-    Room* two = new Room("Sector 2: Callisto",false, nullptr);
-    Room* three = new Room("Sector 3: Geminids",false, nullptr);
-    Room* four = new Room("Sector 4: Titan",false, nullptr);
-    Room* five = new Room("Sector 5: Orion Nebula",false, nullptr);
-    Room* six = new Room("Sector 6: Enceladus",false, nullptr);
-    Room* seven = new Room("Sector 7: Horesehead Nebula",false, nullptr );
-    Room* eight = new Room("Sector 8: Helix",false, nullptr);
-    Room* nine = new Room("Sector 9: Perseus",false, nullptr);
-    Room* ten = new Room("Sector 10: Andromeda galaxy",false, nullptr);
-    Room* eleven = new Room("Sector 11: Big dipper",false, nullptr);
-    Room* twelve = new Room("Sector 12: Black Hole!!",false, nullptr);
-    Room* thirteen = new Room("Sector 13: Astroid field",false, nullptr);
-    Room* fourteen = new Room("Sector 14: Orion's Belt",false, nullptr);
-    Room* fifteen = new Room("Sector 15: Phobos",false, nullptr);
-    Room* sixteen = new Room("Sector 16: Kepler 452b",false, nullptr);
+    Room* one = new Room("Sector 1: Planet X",false, nullptr, nullptr);
+    Room* two = new Room("Sector 2: Callisto",false, nullptr, nullptr);
+    Room* three = new Room("Sector 3: Geminids",false, nullptr, nullptr);
+    Room* four = new Room("Sector 4: Titan",false, nullptr, nullptr);
+    Room* five = new Room("Sector 5: Orion Nebula",false, nullptr, nullptr);
+    Room* six = new Room("Sector 6: Enceladus",false, nullptr, nullptr);
+    Room* seven = new Room("Sector 7: Horesehead Nebula",false, nullptr, nullptr );
+    Room* eight = new Room("Sector 8: Helix",false, nullptr, nullptr);
+    Room* nine = new Room("Sector 9: Perseus",false, nullptr, nullptr);
+    Room* ten = new Room("Sector 10: Andromeda galaxy",false, nullptr, nullptr);
+    Room* eleven = new Room("Sector 11: Big dipper",false, nullptr, nullptr);
+    Room* twelve = new Room("Sector 12: Black Hole!!",false, nullptr, nullptr);
+    Room* thirteen = new Room("Sector 13: Astroid field",false, nullptr, nullptr);
+    Room* fourteen = new Room("Sector 14: Orion's Belt",false, nullptr, nullptr);
+    Room* fifteen = new Room("Sector 15: Phobos",false, nullptr, nullptr);
+    Room* sixteen = new Room("Sector 16: Kepler 452b",false, nullptr, nullptr);
+    Room* bossRoom = new Room("You have been wared to an unknown sector not on any maps and in front of you lies the flagship of the rebel fleet.",false, nullptr, nullptr);
     this->roomList.push_back(one);
     this->roomList.push_back(two);
     this->roomList.push_back(three);
@@ -48,6 +49,7 @@ void Map::createRooms(){
     this->roomList.push_back(fourteen);
     this->roomList.push_back(fifteen);
     this->roomList.push_back(sixteen);
+    this->roomList.push_back(bossRoom);
 
 }
 void Map::setDirection(){

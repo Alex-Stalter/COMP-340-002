@@ -11,13 +11,15 @@
 
 class Item {
 public:
-    Item(std::string description);
+    Item(std::string description,int modifier);
     std::string getDescription();
+    int getModifier();
     virtual void attribute()= 0;
 
 
 private:
     std::string description;
+    int modifier;
 
 };
 

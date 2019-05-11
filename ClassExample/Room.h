@@ -7,23 +7,22 @@
 #include <string>
 #include <iostream>
 #include "Enemy.h"
+#include "ItemContainer.h"
 //Rooms are an essential building block to the advneture they hold values such as chests enemies and pointers to the other rooms in the dungeon
 
 class Room {
 public:
-    Room(std::string description, bool locked,Enemy* enemy);
+    Room(std::string description, bool locked,Enemy* enemy, ItemContainer* lootBox);
     ~Room();
     std::string getDescription();
     Room* getRoom(std::string direction);
     Enemy* getEnemy();
-    //Chest* getChest();
+    ItemContainer* getBox();
     bool isLocked();
-    bool key();
     void setRoom(Room* northRoom, Room* eastRoom, Room* southRoom, Room* westRoom);
     void setLock(bool lock);
-    void setKey(bool key);
-    //void setChest(Chest* chest);
     void killEnemy();
+    void setContainer(ItemContainer* box);
 
 
 
@@ -37,6 +36,7 @@ private:
     Room* southRoom;
     Room* westRoom;
     Enemy* enemy;
+    ItemContainer* lootBox;
 };
 
 

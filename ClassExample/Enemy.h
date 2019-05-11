@@ -6,17 +6,19 @@
 #define TEXTADVENTURE_ENEMY_H
 #include<string>
 #include <iostream>
+#include "Item.h"
 //Enemy is a abstract method that has seven different children all of who have the same function, to provide the player with obstacles to loot keys and
 //their end goal
 
 class Enemy {
 public:
-    Enemy(int health,int attack);
+    Enemy(int health,int attack,Item* loot);
     void setHealth(int hp);
     void setAttack(int atk);
 
     int getHealth();
     int getAttack();
+    Item* getItem();
 
     virtual void taunt() = 0;
 
@@ -25,7 +27,7 @@ public:
 private:
     int health;
     int attack;
-
+    Item* loot;
 };
 
 

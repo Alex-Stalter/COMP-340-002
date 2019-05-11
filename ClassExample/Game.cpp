@@ -10,7 +10,7 @@ Game::Game(){
     this->secondInput = "";
     this->newPlayer = new Player();
     this->newMap = new Map(newPlayer);
-
+    int shipChoice = 0;
 
 
     //get userInput for player name
@@ -18,6 +18,22 @@ Game::Game(){
     std::getline(std::cin, userInput);
     newPlayer->setName(userInput);
     std::cout << "Beware on your adventure, " << newPlayer->getName() << ".\n~~~~~~~\n"<<std::endl;
+    std::cout<<"Please enter a number to choose your ship: \n"
+               "1:Medium Fighter: Health: 100 BaseAttack: 10\n"
+               "2:Small Scout: Health: 80 Base Attack: 25\n"
+               "3:Heavy Frigate: Health: 150 Base Attack: 6"<<std::endl;
+    std::cin>>shipChoice;
+    if(shipChoice==1){
+        this->newPlayer->setHealth(100);
+        this->newPlayer->setDamage(10);
+    }else if (shipChoice == 2){
+        this->newPlayer->setHealth(80);
+        this->newPlayer->setDamage(25);
+    }else if (shipChoice == 3){
+        this->newPlayer->setHealth(150);
+        this->newPlayer->setDamage(6);
+    }
+
 
     instatiateGame();
 
@@ -62,12 +78,23 @@ void Game::instatiateGame() {
             std::cout<<"You are in "<< this->currentRoom->getDescription() << std::endl;
 
         }else if(this->userInput == "Inventory"){
-
+             if(this->newPlayer->getInventory().size()){
+                 std::cout<<"Your inventory is empty."<<std::endl;
+             }else {
+                 std::cout << "You have: " << std::endl;
+                 for (Item *h:this->newPlayer->getInventory()) {
+                     std::cout << h->getDescription() << std::endl;
+                 }
+             }
 
         }else if(this->userInput=="Give" && this->secondInput=="Up"){
             break;
         }else if(this->userInput=="Use"){
-             break;
+             for (Item *h:this->newPlayer->getInventory()) {
+                 if(h->getDescription()==this->secondInput){
+                     this->newPlayer->setHealth(this->newPlayer->getHealth()+h->getModifier());
+                 }
+             }
          }else if(this->userInput=="Get" && this->secondInput=="Help"){
              std::cout<<"Commands:\n"
                         "Go {Cardinal Direction 'North','East','South','West'}\n"

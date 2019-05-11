@@ -4,10 +4,11 @@
 
 #include "Room.h"
 
-Room::Room(std::string description, bool locked,Enemy* enemy){
+Room::Room(std::string description, bool locked,Enemy* enemy, ItemContainer* lootBox){
     this->description = description;
     this->locked = locked;
     this->enemy = enemy;
+    this->lootBox = lootBox;
 
 
 }
@@ -58,25 +59,26 @@ bool Room::isLocked() {
     return this->locked;
 }
 
-bool Room::key() {
-    return this->hasKey;
-}
-
 void Room::setLock(bool lock) {
     this->locked = lock;
 }
 
-void Room::setKey(bool key) {
-    this->hasKey = key;
-
-}
-
 void Room::killEnemy() {
-
+    ItemContainer* newContainer = new ItemContainer(this->enemy->getItem());
+    this->lootBox = newContainer;
     this->enemy = nullptr;
 }
 
 Enemy *Room::getEnemy() {
     return this->enemy;
+}
+
+void Room::setContainer(ItemContainer * box) {
+    this->lootBox = box;
+
+}
+
+ItemContainer *Room::getBox() {
+    return this->lootBox;
 }
 
