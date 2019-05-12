@@ -6,7 +6,8 @@
 
 Player::Player() {
     this->health = 100;
-    this->attackDamage = 15;
+    this->attackDamage = 10;
+    this->calcGuns();
 }
 Player::~Player(){
 }
@@ -25,6 +26,7 @@ int Player::getAttack(){
 }
 void Player::setDamage(int attack){
     this->attackDamage = attack;
+    this->calcGuns();
 }
 void Player::setHealth(int health){
     this->health = health;
@@ -46,4 +48,22 @@ std::vector<Item*> Player::getInventory() {
 void Player::addItem(Item *loot) {
     this->Inventory.push_back(loot);
 
+}
+
+void Player::calcGuns() {
+    this->rocketAttack = this->attackDamage+10;
+    this->laserAttack = this->attackDamage+5;
+    this->stunAttack = this->attackDamage-5;
+}
+
+int Player::getLaser() {
+    return this->laserAttack;
+}
+
+int Player::getRocket() {
+    return this->rocketAttack;
+}
+
+int Player::getStun() {
+    return this->stunAttack;
 }
