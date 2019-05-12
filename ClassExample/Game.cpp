@@ -53,7 +53,7 @@ void Game::combat() {
 void Game::instatiateGame() {
     std::cout<<"Your ship arrives in the system you only have 12 jumps to ready yourself before you have to face the rebel leader.\n"
                "If you destroy enough enemy ships you'll be able to access the blockaded sectors of this system.\n"
-               "Good luc captain!"<<std::endl;
+               "Good luck captain!"<<std::endl;
     this->currentRoom = this->newMap->getList()[0];
     std::cout<<"You are in "<< this->currentRoom->getDescription() << std::endl;
     while(this->userInput != "Give Up"){
