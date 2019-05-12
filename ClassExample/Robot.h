@@ -16,7 +16,7 @@ public:
 
 
     void taunt();
-    void firstGlance(Player& myPlayer);
+    void firstGlance();
 
 private:
 

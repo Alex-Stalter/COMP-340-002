@@ -30,7 +30,7 @@ void Robot::taunt() {
 }
 
 
-void Robot::firstGlance(Player& myPlayer) {
-    std::cout << "An angular titanium ship flies at " << myPlayer.getName() << "'s ship."
+void Robot::firstGlance() {
+    std::cout << "An angular titanium ship flies at your ship."
               << " It's lasers are powering up!" << std::endl;
 }
