@@ -48,15 +48,15 @@ EQUALS = =
 
 # The top-level source directory on which CMake was run.
 <<<<<<< HEAD
-CMAKE_SOURCE_DIR = C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample
-
-# The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample\cmake-build-debug
-=======
 CMAKE_SOURCE_DIR = /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug
+=======
+CMAKE_SOURCE_DIR = C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample\cmake-build-debug
 >>>>>>> master
 
 #=============================================================================
@@ -87,13 +87,13 @@ rebuild_cache/fast: rebuild_cache
 # The main all target
 all: cmake_check_build_system
 <<<<<<< HEAD
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample\cmake-build-debug\CMakeFiles C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample\cmake-build-debug\CMakeFiles\progress.marks
-	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample\cmake-build-debug\CMakeFiles 0
-=======
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample\cmake-build-debug\CMakeFiles C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample\cmake-build-debug\CMakeFiles\progress.marks
+	$(MAKE) -f CMakeFiles\Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample\cmake-build-debug\CMakeFiles 0
 >>>>>>> master
 .PHONY : all
 
@@ -135,38 +135,7 @@ ClassExample/fast:
 	$(MAKE) -f CMakeFiles\ClassExample.dir\build.make CMakeFiles/ClassExample.dir/build
 .PHONY : ClassExample/fast
 
-<<<<<<< HEAD
 Enemy.obj: Enemy.cpp.obj
-=======
-Bug.o: Bug.cpp.o
-
-.PHONY : Bug.o
-
-# target to build an object file
-Bug.cpp.o:
-	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/Bug.cpp.o
-.PHONY : Bug.cpp.o
-
-Bug.i: Bug.cpp.i
-
-.PHONY : Bug.i
-
-# target to preprocess a source file
-Bug.cpp.i:
-	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/Bug.cpp.i
-.PHONY : Bug.cpp.i
-
-Bug.s: Bug.cpp.s
-
-.PHONY : Bug.s
-
-# target to generate assembly for a file
-Bug.cpp.s:
-	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/Bug.cpp.s
-.PHONY : Bug.cpp.s
-
-Enemy.o: Enemy.cpp.o
->>>>>>> master
 
 .PHONY : Enemy.obj
 
@@ -247,33 +216,6 @@ Item.cpp.s:
 	$(MAKE) -f CMakeFiles\ClassExample.dir\build.make CMakeFiles/ClassExample.dir/Item.cpp.s
 .PHONY : Item.cpp.s
 
-ItemContainer.obj: ItemContainer.cpp.obj
-
-.PHONY : ItemContainer.obj
-
-# target to build an object file
-ItemContainer.cpp.obj:
-	$(MAKE) -f CMakeFiles\ClassExample.dir\build.make CMakeFiles/ClassExample.dir/ItemContainer.cpp.obj
-.PHONY : ItemContainer.cpp.obj
-
-ItemContainer.i: ItemContainer.cpp.i
-
-.PHONY : ItemContainer.i
-
-# target to preprocess a source file
-ItemContainer.cpp.i:
-	$(MAKE) -f CMakeFiles\ClassExample.dir\build.make CMakeFiles/ClassExample.dir/ItemContainer.cpp.i
-.PHONY : ItemContainer.cpp.i
-
-ItemContainer.s: ItemContainer.cpp.s
-
-.PHONY : ItemContainer.s
-
-# target to generate assembly for a file
-ItemContainer.cpp.s:
-	$(MAKE) -f CMakeFiles\ClassExample.dir\build.make CMakeFiles/ClassExample.dir/ItemContainer.cpp.s
-.PHONY : ItemContainer.cpp.s
-
 Map.obj: Map.cpp.obj
 
 .PHONY : Map.obj
@@ -327,33 +269,6 @@ Player.s: Player.cpp.s
 Player.cpp.s:
 	$(MAKE) -f CMakeFiles\ClassExample.dir\build.make CMakeFiles/ClassExample.dir/Player.cpp.s
 .PHONY : Player.cpp.s
-
-RockPeople.obj: RockPeople.cpp.obj
-
-.PHONY : RockPeople.obj
-
-# target to build an object file
-RockPeople.cpp.obj:
-	$(MAKE) -f CMakeFiles\ClassExample.dir\build.make CMakeFiles/ClassExample.dir/RockPeople.cpp.obj
-.PHONY : RockPeople.cpp.obj
-
-RockPeople.i: RockPeople.cpp.i
-
-.PHONY : RockPeople.i
-
-# target to preprocess a source file
-RockPeople.cpp.i:
-	$(MAKE) -f CMakeFiles\ClassExample.dir\build.make CMakeFiles/ClassExample.dir/RockPeople.cpp.i
-.PHONY : RockPeople.cpp.i
-
-RockPeople.s: RockPeople.cpp.s
-
-.PHONY : RockPeople.s
-
-# target to generate assembly for a file
-RockPeople.cpp.s:
-	$(MAKE) -f CMakeFiles\ClassExample.dir\build.make CMakeFiles/ClassExample.dir/RockPeople.cpp.s
-.PHONY : RockPeople.cpp.s
 
 Room.obj: Room.cpp.obj
 
@@ -411,7 +326,6 @@ main.cpp.s:
 
 # Help Target
 help:
-<<<<<<< HEAD
 	@echo The following are some of the valid targets for this Makefile:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
@@ -428,60 +342,18 @@ help:
 	@echo ... Item.obj
 	@echo ... Item.i
 	@echo ... Item.s
-	@echo ... ItemContainer.obj
-	@echo ... ItemContainer.i
-	@echo ... ItemContainer.s
 	@echo ... Map.obj
 	@echo ... Map.i
 	@echo ... Map.s
 	@echo ... Player.obj
 	@echo ... Player.i
 	@echo ... Player.s
-	@echo ... RockPeople.obj
-	@echo ... RockPeople.i
-	@echo ... RockPeople.s
 	@echo ... Room.obj
 	@echo ... Room.i
 	@echo ... Room.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-=======
-	@echo "The following are some of the valid targets for this Makefile:"
-	@echo "... all (the default if no target is provided)"
-	@echo "... clean"
-	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... ClassExample"
-	@echo "... Bug.o"
-	@echo "... Bug.i"
-	@echo "... Bug.s"
-	@echo "... Enemy.o"
-	@echo "... Enemy.i"
-	@echo "... Enemy.s"
-	@echo "... Game.o"
-	@echo "... Game.i"
-	@echo "... Game.s"
-	@echo "... Item.o"
-	@echo "... Item.i"
-	@echo "... Item.s"
-	@echo "... ItemContainer.o"
-	@echo "... ItemContainer.i"
-	@echo "... ItemContainer.s"
-	@echo "... Map.o"
-	@echo "... Map.i"
-	@echo "... Map.s"
-	@echo "... Player.o"
-	@echo "... Player.i"
-	@echo "... Player.s"
-	@echo "... Room.o"
-	@echo "... Room.i"
-	@echo "... Room.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
->>>>>>> master
 .PHONY : help
 
 

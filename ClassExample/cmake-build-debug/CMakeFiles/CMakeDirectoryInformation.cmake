@@ -3,11 +3,11 @@
 
 # Relative path conversion top directories.
 <<<<<<< HEAD
-set(CMAKE_RELATIVE_PATH_TOP_SOURCE "C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/cmake-build-debug")
-=======
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample")
 set(CMAKE_RELATIVE_PATH_TOP_BINARY "/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug")
+=======
+set(CMAKE_RELATIVE_PATH_TOP_SOURCE "C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/cmake-build-debug")
 >>>>>>> master
 
 # Force unix paths in dependencies.

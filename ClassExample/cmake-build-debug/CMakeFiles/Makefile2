@@ -59,15 +59,15 @@ EQUALS = =
 
 # The top-level source directory on which CMake was run.
 <<<<<<< HEAD
-CMAKE_SOURCE_DIR = C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample
-
-# The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample\cmake-build-debug
-=======
 CMAKE_SOURCE_DIR = /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug
+=======
+CMAKE_SOURCE_DIR = C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample\cmake-build-debug
 >>>>>>> master
 
 #=============================================================================
@@ -76,13 +76,13 @@ CMAKE_BINARY_DIR = /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExa
 # All Build rule for target.
 CMakeFiles/ClassExample.dir/all:
 <<<<<<< HEAD
-	$(MAKE) -f CMakeFiles\ClassExample.dir\build.make CMakeFiles/ClassExample.dir/depend
-	$(MAKE) -f CMakeFiles\ClassExample.dir\build.make CMakeFiles/ClassExample.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target ClassExample"
-=======
 	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/depend
 	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target ClassExample"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target ClassExample"
+=======
+	$(MAKE) -f CMakeFiles\ClassExample.dir\build.make CMakeFiles/ClassExample.dir/depend
+	$(MAKE) -f CMakeFiles\ClassExample.dir\build.make CMakeFiles/ClassExample.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target ClassExample"
 >>>>>>> master
 .PHONY : CMakeFiles/ClassExample.dir/all
 
@@ -94,13 +94,13 @@ all: CMakeFiles/ClassExample.dir/all
 # Build rule for subdir invocation for target.
 CMakeFiles/ClassExample.dir/rule: cmake_check_build_system
 <<<<<<< HEAD
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample\cmake-build-debug\CMakeFiles 10
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/ClassExample.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample\cmake-build-debug\CMakeFiles 0
-=======
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ClassExample.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample\cmake-build-debug\CMakeFiles 8
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/ClassExample.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample\cmake-build-debug\CMakeFiles 0
 >>>>>>> master
 .PHONY : CMakeFiles/ClassExample.dir/rule
 
