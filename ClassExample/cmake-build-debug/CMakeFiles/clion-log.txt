@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug
+-- Build files have been written to: /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug

@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample
+CMAKE_SOURCE_DIR = /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,33 @@ ClassExample: cmake_check_build_system
 ClassExample/fast:
 	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/build
 .PHONY : ClassExample/fast
+
+Bug.o: Bug.cpp.o
+
+.PHONY : Bug.o
+
+# target to build an object file
+Bug.cpp.o:
+	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/Bug.cpp.o
+.PHONY : Bug.cpp.o
+
+Bug.i: Bug.cpp.i
+
+.PHONY : Bug.i
+
+# target to preprocess a source file
+Bug.cpp.i:
+	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/Bug.cpp.i
+.PHONY : Bug.cpp.i
+
+Bug.s: Bug.cpp.s
+
+.PHONY : Bug.s
+
+# target to generate assembly for a file
+Bug.cpp.s:
+	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/Bug.cpp.s
+.PHONY : Bug.cpp.s
 
 Enemy.o: Enemy.cpp.o
 
@@ -348,6 +375,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ClassExample"
+	@echo "... Bug.o"
+	@echo "... Bug.i"
+	@echo "... Bug.s"
 	@echo "... Enemy.o"
 	@echo "... Enemy.i"
 	@echo "... Enemy.s"
