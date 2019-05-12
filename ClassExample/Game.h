@@ -19,6 +19,7 @@ private:
     std::string secondInput;
     Player* newPlayer;
     Map* newMap;
+    int enemiesKilled;
     
 };
 

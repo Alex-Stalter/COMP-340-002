@@ -14,19 +14,22 @@ Map::~Map(){
 
 }
 void Map::createRooms(){
-
+    ItemContainer* box = new ItemContainer(nullptr);
+    ItemContainer* crate = new ItemContainer(nullptr);
+    ItemContainer* barrel = new ItemContainer(nullptr);
+    ItemContainer* debris = new ItemContainer(nullptr);
 
     Room* one = new Room("Sector 1: Planet X",false, nullptr, nullptr);
-    Room* two = new Room("Sector 2: Callisto",false, nullptr, nullptr);
+    Room* two = new Room("Sector 2: Callisto",true, nullptr, box);
     Room* three = new Room("Sector 3: Geminids",false, nullptr, nullptr);
     Room* four = new Room("Sector 4: Titan",false, nullptr, nullptr);
-    Room* five = new Room("Sector 5: Orion Nebula",false, nullptr, nullptr);
+    Room* five = new Room("Sector 5: Orion Nebula",false, nullptr, crate);
     Room* six = new Room("Sector 6: Enceladus",false, nullptr, nullptr);
     Room* seven = new Room("Sector 7: Horesehead Nebula",false, nullptr, nullptr );
     Room* eight = new Room("Sector 8: Helix",false, nullptr, nullptr);
-    Room* nine = new Room("Sector 9: Perseus",false, nullptr, nullptr);
+    Room* nine = new Room("Sector 9: Perseus",false, nullptr, debris);
     Room* ten = new Room("Sector 10: Andromeda galaxy",false, nullptr, nullptr);
-    Room* eleven = new Room("Sector 11: Big dipper",false, nullptr, nullptr);
+    Room* eleven = new Room("Sector 11: Big dipper",true, nullptr, barrel);
     Room* twelve = new Room("Sector 12: Black Hole!!",false, nullptr, nullptr);
     Room* thirteen = new Room("Sector 13: Astroid field",false, nullptr, nullptr);
     Room* fourteen = new Room("Sector 14: Orion's Belt",false, nullptr, nullptr);

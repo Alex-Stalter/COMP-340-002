@@ -11,6 +11,7 @@ Game::Game(){
     this->newPlayer = new Player();
     this->newMap = new Map(newPlayer);
     int shipChoice = 0;
+    this->enemiesKilled = 0;
 
 
     //get userInput for player name
@@ -50,9 +51,9 @@ void Game::combat() {
 }
 
 void Game::instatiateGame() {
-    std::cout<<"Your ship jumps into the sector and the radar lights up with obstacles throughout the system. \n"
-               "Your mission is to reach the blockade in this sector and free the sector from rebel control before \n"
-               "the system is drained of its resources."<<std::endl;
+    std::cout<<"Your ship arrives in the system you only have 12 jumps to ready yourself before you have to face the rebel leader.\n"
+               "If you destroy enough enemy ships you'll be able to access the blockaded sectors of this system.\n"
+               "Good luc captain!"<<std::endl;
     this->currentRoom = this->newMap->getList()[0];
     std::cout<<"You are in "<< this->currentRoom->getDescription() << std::endl;
     while(this->userInput != "Give Up"){
@@ -64,21 +65,32 @@ void Game::instatiateGame() {
 
         std::cin>>userInput>>secondInput;
          if(this->userInput=="Search"){
-            if(this->secondInput=="chest"){
-                std::cout<<"You found a map"<<std::endl;
+            if(this->secondInput=="Debris"){
+                std::cout<<"In the debris of a collision you find an upgrade."<<std::endl;
+            }else if(this->secondInput=="Ship"){
+                std::cout<<"You search through the wreckage of the ship you destroyed and find an upgrade."<<std::endl;
             }
 
         }else if(this->userInput == "Take"){
-
+            if(this->secondInput=="Upgrade"){
+                this->newPlayer->addItem(this->currentRoom->getBox()->getItem());
+                std::cout<<"You find a "<<this->currentRoom->getBox()->getItem()->getDescription()<<" and add it to your inventory."<<std::endl;
+            }
 
         }else if(this->userInput == "Open"){
-
+            if(this->secondInput=="Blockade"&&this->newMap->getList()[10]->isLocked()&&this->enemiesKilled>=2){
+                this->newMap->getList()[10]->setLock(false);
+                std::cout<<"Captain the blockade around sector 11 has been lifted and we are now free to travel there"<<std::endl;
+            }else if(this->secondInput=="Blockade"&&this->newMap->getList()[1]->isLocked()&&this->enemiesKilled>=4){
+                this->newMap->getList()[1]->setLock(false);
+                std::cout<<"Captain the blockade around sector 1 has been lifted and we are free to travel there."<< std::endl;
+            }
 
         }else if(this->userInput == "Look"){
             std::cout<<"You are in "<< this->currentRoom->getDescription() << std::endl;
 
         }else if(this->userInput == "Inventory"){
-             if(this->newPlayer->getInventory().size()){
+             if(this->newPlayer->getInventory().empty()){
                  std::cout<<"Your inventory is empty."<<std::endl;
              }else {
                  std::cout << "You have: " << std::endl;
@@ -90,9 +102,12 @@ void Game::instatiateGame() {
         }else if(this->userInput=="Give" && this->secondInput=="Up"){
             break;
         }else if(this->userInput=="Use"){
+             int count=-1;
              for (Item *h:this->newPlayer->getInventory()) {
+                 count++;
                  if(h->getDescription()==this->secondInput){
                      this->newPlayer->setHealth(this->newPlayer->getHealth()+h->getModifier());
+                     this->newPlayer->getInventory().erase(this->newPlayer->getInventory().begin()+count);
                  }
              }
          }else if(this->userInput=="Get" && this->secondInput=="Help"){
@@ -100,7 +115,7 @@ void Game::instatiateGame() {
                         "Go {Cardinal Direction 'North','East','South','West'}\n"
                         "Search {searchable item}\n"
                         "Take {Item}\n"
-                        "Open {Used for opening blockades in different sectors when the correct key is held}\n"
+                        "Open {Used for opening blockades in different sectors when the correct key is held use Blockade as second input}\n"
                         "Look Around {Displays the room description again}\n"
                         "Give Up {exits the game}\n"
                         "Use {Item in inventory}"<<std::endl;
