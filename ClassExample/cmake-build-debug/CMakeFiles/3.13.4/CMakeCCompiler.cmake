@@ -1,4 +1,8 @@
+<<<<<<< HEAD:ClassExample/cmake-build-debug/CMakeFiles/3.13.4/CMakeCCompiler.cmake
 set(CMAKE_C_COMPILER "C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/gcc.exe")
+=======
+set(CMAKE_C_COMPILER "/Library/Developer/CommandLineTools/usr/bin/cc")
+>>>>>>> master:ClassExample/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "GNU")
 set(CMAKE_C_COMPILER_VERSION "8.1.0")
@@ -16,12 +20,21 @@ set(CMAKE_C_SIMULATE_VERSION "")
 
 
 
+<<<<<<< HEAD:ClassExample/cmake-build-debug/CMakeFiles/3.13.4/CMakeCCompiler.cmake
 set(CMAKE_AR "C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/ar.exe")
 set(CMAKE_C_COMPILER_AR "C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/gcc-ar.exe")
 set(CMAKE_RANLIB "C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/ranlib.exe")
 set(CMAKE_C_COMPILER_RANLIB "C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/gcc-ranlib.exe")
 set(CMAKE_LINKER "C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/ld.exe")
 set(CMAKE_COMPILER_IS_GNUCC 1)
+=======
+set(CMAKE_AR "/Library/Developer/CommandLineTools/usr/bin/ar")
+set(CMAKE_C_COMPILER_AR "")
+set(CMAKE_RANLIB "/Library/Developer/CommandLineTools/usr/bin/ranlib")
+set(CMAKE_C_COMPILER_RANLIB "")
+set(CMAKE_LINKER "/Library/Developer/CommandLineTools/usr/bin/ld")
+set(CMAKE_COMPILER_IS_GNUCC )
+>>>>>>> master:ClassExample/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake
 set(CMAKE_C_COMPILER_LOADED 1)
 set(CMAKE_C_COMPILER_WORKS TRUE)
 set(CMAKE_C_ABI_COMPILED TRUE)
@@ -68,6 +81,12 @@ endif()
 
 
 
+<<<<<<< HEAD:ClassExample/cmake-build-debug/CMakeFiles/3.13.4/CMakeCCompiler.cmake
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "mingw32;gcc;moldname;mingwex;pthread;advapi32;shell32;user32;kernel32;iconv;mingw32;gcc;moldname;mingwex")
 set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0;C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc;C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/lib;C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
+=======
+set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/lib")
+set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks")
+>>>>>>> master:ClassExample/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake

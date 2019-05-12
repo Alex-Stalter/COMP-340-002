@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir
 C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/Angela/Documents/electronics/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+=======
+/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir
+>>>>>>> master

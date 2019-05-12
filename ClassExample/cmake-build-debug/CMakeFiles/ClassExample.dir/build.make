@@ -42,10 +42,17 @@ RM = "C:\Program Files\JetBrains\CLion 2019.1\bin\cmake\win\bin\cmake.exe" -E re
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample\cmake-build-debug
+=======
+CMAKE_SOURCE_DIR = /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug
+>>>>>>> master
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ClassExample.dir/depend.make
@@ -56,6 +63,7 @@ include CMakeFiles/ClassExample.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ClassExample.dir/flags.make
 
+<<<<<<< HEAD
 CMakeFiles/ClassExample.dir/main.cpp.obj: CMakeFiles/ClassExample.dir/flags.make
 CMakeFiles/ClassExample.dir/main.cpp.obj: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ClassExample.dir/main.cpp.obj"
@@ -184,10 +192,141 @@ ClassExample_OBJECTS = \
 "CMakeFiles/ClassExample.dir/Game.cpp.obj" \
 "CMakeFiles/ClassExample.dir/ItemContainer.cpp.obj" \
 "CMakeFiles/ClassExample.dir/RockPeople.cpp.obj"
+=======
+CMakeFiles/ClassExample.dir/main.cpp.o: CMakeFiles/ClassExample.dir/flags.make
+CMakeFiles/ClassExample.dir/main.cpp.o: ../main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ClassExample.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClassExample.dir/main.cpp.o -c /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/main.cpp
+
+CMakeFiles/ClassExample.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClassExample.dir/main.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/main.cpp > CMakeFiles/ClassExample.dir/main.cpp.i
+
+CMakeFiles/ClassExample.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClassExample.dir/main.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/main.cpp -o CMakeFiles/ClassExample.dir/main.cpp.s
+
+CMakeFiles/ClassExample.dir/Player.cpp.o: CMakeFiles/ClassExample.dir/flags.make
+CMakeFiles/ClassExample.dir/Player.cpp.o: ../Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ClassExample.dir/Player.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClassExample.dir/Player.cpp.o -c /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Player.cpp
+
+CMakeFiles/ClassExample.dir/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClassExample.dir/Player.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Player.cpp > CMakeFiles/ClassExample.dir/Player.cpp.i
+
+CMakeFiles/ClassExample.dir/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClassExample.dir/Player.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Player.cpp -o CMakeFiles/ClassExample.dir/Player.cpp.s
+
+CMakeFiles/ClassExample.dir/Map.cpp.o: CMakeFiles/ClassExample.dir/flags.make
+CMakeFiles/ClassExample.dir/Map.cpp.o: ../Map.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ClassExample.dir/Map.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClassExample.dir/Map.cpp.o -c /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Map.cpp
+
+CMakeFiles/ClassExample.dir/Map.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClassExample.dir/Map.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Map.cpp > CMakeFiles/ClassExample.dir/Map.cpp.i
+
+CMakeFiles/ClassExample.dir/Map.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClassExample.dir/Map.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Map.cpp -o CMakeFiles/ClassExample.dir/Map.cpp.s
+
+CMakeFiles/ClassExample.dir/Room.cpp.o: CMakeFiles/ClassExample.dir/flags.make
+CMakeFiles/ClassExample.dir/Room.cpp.o: ../Room.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ClassExample.dir/Room.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClassExample.dir/Room.cpp.o -c /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Room.cpp
+
+CMakeFiles/ClassExample.dir/Room.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClassExample.dir/Room.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Room.cpp > CMakeFiles/ClassExample.dir/Room.cpp.i
+
+CMakeFiles/ClassExample.dir/Room.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClassExample.dir/Room.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Room.cpp -o CMakeFiles/ClassExample.dir/Room.cpp.s
+
+CMakeFiles/ClassExample.dir/Item.cpp.o: CMakeFiles/ClassExample.dir/flags.make
+CMakeFiles/ClassExample.dir/Item.cpp.o: ../Item.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ClassExample.dir/Item.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClassExample.dir/Item.cpp.o -c /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Item.cpp
+
+CMakeFiles/ClassExample.dir/Item.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClassExample.dir/Item.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Item.cpp > CMakeFiles/ClassExample.dir/Item.cpp.i
+
+CMakeFiles/ClassExample.dir/Item.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClassExample.dir/Item.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Item.cpp -o CMakeFiles/ClassExample.dir/Item.cpp.s
+
+CMakeFiles/ClassExample.dir/Enemy.cpp.o: CMakeFiles/ClassExample.dir/flags.make
+CMakeFiles/ClassExample.dir/Enemy.cpp.o: ../Enemy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ClassExample.dir/Enemy.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClassExample.dir/Enemy.cpp.o -c /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Enemy.cpp
+
+CMakeFiles/ClassExample.dir/Enemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClassExample.dir/Enemy.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Enemy.cpp > CMakeFiles/ClassExample.dir/Enemy.cpp.i
+
+CMakeFiles/ClassExample.dir/Enemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClassExample.dir/Enemy.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Enemy.cpp -o CMakeFiles/ClassExample.dir/Enemy.cpp.s
+
+CMakeFiles/ClassExample.dir/Game.cpp.o: CMakeFiles/ClassExample.dir/flags.make
+CMakeFiles/ClassExample.dir/Game.cpp.o: ../Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ClassExample.dir/Game.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClassExample.dir/Game.cpp.o -c /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Game.cpp
+
+CMakeFiles/ClassExample.dir/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClassExample.dir/Game.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Game.cpp > CMakeFiles/ClassExample.dir/Game.cpp.i
+
+CMakeFiles/ClassExample.dir/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClassExample.dir/Game.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Game.cpp -o CMakeFiles/ClassExample.dir/Game.cpp.s
+
+CMakeFiles/ClassExample.dir/ItemContainer.cpp.o: CMakeFiles/ClassExample.dir/flags.make
+CMakeFiles/ClassExample.dir/ItemContainer.cpp.o: ../ItemContainer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ClassExample.dir/ItemContainer.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClassExample.dir/ItemContainer.cpp.o -c /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/ItemContainer.cpp
+
+CMakeFiles/ClassExample.dir/ItemContainer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClassExample.dir/ItemContainer.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/ItemContainer.cpp > CMakeFiles/ClassExample.dir/ItemContainer.cpp.i
+
+CMakeFiles/ClassExample.dir/ItemContainer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClassExample.dir/ItemContainer.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/ItemContainer.cpp -o CMakeFiles/ClassExample.dir/ItemContainer.cpp.s
+
+CMakeFiles/ClassExample.dir/Bug.cpp.o: CMakeFiles/ClassExample.dir/flags.make
+CMakeFiles/ClassExample.dir/Bug.cpp.o: ../Bug.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ClassExample.dir/Bug.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClassExample.dir/Bug.cpp.o -c /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Bug.cpp
+
+CMakeFiles/ClassExample.dir/Bug.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClassExample.dir/Bug.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Bug.cpp > CMakeFiles/ClassExample.dir/Bug.cpp.i
+
+CMakeFiles/ClassExample.dir/Bug.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClassExample.dir/Bug.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Bug.cpp -o CMakeFiles/ClassExample.dir/Bug.cpp.s
+
+# Object files for target ClassExample
+ClassExample_OBJECTS = \
+"CMakeFiles/ClassExample.dir/main.cpp.o" \
+"CMakeFiles/ClassExample.dir/Player.cpp.o" \
+"CMakeFiles/ClassExample.dir/Map.cpp.o" \
+"CMakeFiles/ClassExample.dir/Room.cpp.o" \
+"CMakeFiles/ClassExample.dir/Item.cpp.o" \
+"CMakeFiles/ClassExample.dir/Enemy.cpp.o" \
+"CMakeFiles/ClassExample.dir/Game.cpp.o" \
+"CMakeFiles/ClassExample.dir/ItemContainer.cpp.o" \
+"CMakeFiles/ClassExample.dir/Bug.cpp.o"
+>>>>>>> master
 
 # External object files for target ClassExample
 ClassExample_EXTERNAL_OBJECTS =
 
+<<<<<<< HEAD
 ClassExample.exe: CMakeFiles/ClassExample.dir/main.cpp.obj
 ClassExample.exe: CMakeFiles/ClassExample.dir/Player.cpp.obj
 ClassExample.exe: CMakeFiles/ClassExample.dir/Map.cpp.obj
@@ -203,6 +342,21 @@ ClassExample.exe: CMakeFiles/ClassExample.dir/objects1.rsp
 ClassExample.exe: CMakeFiles/ClassExample.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable ClassExample.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ClassExample.dir\link.txt --verbose=$(VERBOSE)
+=======
+ClassExample: CMakeFiles/ClassExample.dir/main.cpp.o
+ClassExample: CMakeFiles/ClassExample.dir/Player.cpp.o
+ClassExample: CMakeFiles/ClassExample.dir/Map.cpp.o
+ClassExample: CMakeFiles/ClassExample.dir/Room.cpp.o
+ClassExample: CMakeFiles/ClassExample.dir/Item.cpp.o
+ClassExample: CMakeFiles/ClassExample.dir/Enemy.cpp.o
+ClassExample: CMakeFiles/ClassExample.dir/Game.cpp.o
+ClassExample: CMakeFiles/ClassExample.dir/ItemContainer.cpp.o
+ClassExample: CMakeFiles/ClassExample.dir/Bug.cpp.o
+ClassExample: CMakeFiles/ClassExample.dir/build.make
+ClassExample: CMakeFiles/ClassExample.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable ClassExample"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ClassExample.dir/link.txt --verbose=$(VERBOSE)
+>>>>>>> master
 
 # Rule to build all files generated by this target.
 CMakeFiles/ClassExample.dir/build: ClassExample.exe
@@ -214,6 +368,10 @@ CMakeFiles/ClassExample.dir/clean:
 .PHONY : CMakeFiles/ClassExample.dir/clean
 
 CMakeFiles/ClassExample.dir/depend:
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample\cmake-build-debug C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample\cmake-build-debug C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample\cmake-build-debug\CMakeFiles\ClassExample.dir\DependInfo.cmake --color=$(COLOR)
+=======
+	cd /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/ClassExample.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> master
 .PHONY : CMakeFiles/ClassExample.dir/depend
 
