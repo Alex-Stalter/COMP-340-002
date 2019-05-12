@@ -8,6 +8,9 @@ set(CMAKE_DEPENDS_GENERATOR "MinGW Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.13/Modules/CMakeCCompiler.cmake.in"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.13/Modules/CMakeCCompilerABI.c"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.13/Modules/CMakeCInformation.cmake"
@@ -101,6 +104,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.13.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.13.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.13.2/CMakeSystem.cmake"
+<<<<<<< HEAD
 =======
   "C:/Program Files/JetBrains/CLion 2019.1/bin/cmake/win/share/cmake-3.13/Modules/CMakeCCompiler.cmake.in"
   "C:/Program Files/JetBrains/CLion 2019.1/bin/cmake/win/share/cmake-3.13/Modules/CMakeCCompilerABI.c"
@@ -200,6 +204,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.13.4/CMakeRCCompiler.cmake"
   "CMakeFiles/3.13.4/CMakeSystem.cmake"
 >>>>>>> master
+=======
+>>>>>>> master
   "CMakeFiles/feature_tests.c"
   "CMakeFiles/feature_tests.cxx"
   )
@@ -213,11 +219,15 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> master
   "CMakeFiles/3.13.2/CMakeSystem.cmake"
   "CMakeFiles/3.13.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.13.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.13.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.13.2/CMakeCXXCompiler.cmake"
+<<<<<<< HEAD
 =======
   "CMakeFiles/3.13.4/CMakeSystem.cmake"
   "CMakeFiles/3.13.4/CMakeCCompiler.cmake"
@@ -225,6 +235,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.13.4/CMakeRCCompiler.cmake"
   "CMakeFiles/3.13.4/CMakeCCompiler.cmake"
   "CMakeFiles/3.13.4/CMakeCXXCompiler.cmake"
+>>>>>>> master
+=======
 >>>>>>> master
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )

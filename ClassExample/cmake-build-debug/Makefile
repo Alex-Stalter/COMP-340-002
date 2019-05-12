@@ -48,6 +48,7 @@ EQUALS = =
 
 # The top-level source directory on which CMake was run.
 <<<<<<< HEAD
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample
 
 # The top-level build directory on which CMake was run.
@@ -57,6 +58,12 @@ CMAKE_SOURCE_DIR = C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExamp
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample\cmake-build-debug
+>>>>>>> master
+=======
+CMAKE_SOURCE_DIR = /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug
 >>>>>>> master
 
 #=============================================================================
@@ -87,6 +94,7 @@ rebuild_cache/fast: rebuild_cache
 # The main all target
 all: cmake_check_build_system
 <<<<<<< HEAD
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles 0
@@ -94,6 +102,11 @@ all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample\cmake-build-debug\CMakeFiles C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Angela\Documents\electronics\COMP-340-002\ClassExample\cmake-build-debug\CMakeFiles 0
+>>>>>>> master
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles/progress.marks
+	$(MAKE) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles 0
 >>>>>>> master
 .PHONY : all
 
