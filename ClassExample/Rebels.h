@@ -8,7 +8,7 @@
 
 class Rebels: public Enemy{
 public:
-    Rebels(int health, int attack,  int shipVal, Item* myItem);
+    Rebels(int health, int attack,  int shipVal, Item* myItem,std::string Class);
     void taunt();
     void firstGlance();
 private:

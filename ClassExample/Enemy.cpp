@@ -4,10 +4,11 @@
 
 #include "Enemy.h"
 
-Enemy::Enemy(int health, int attack, Item* loot) {
+Enemy::Enemy(int health, int attack, Item* loot,std::string enemyClass) {
     this->health = health;
     this->attack = attack;
     this->loot = loot;
+    this->enemyClass = enemyClass;
 }
 void Enemy::setHealth(int hp){
     this->health = hp;
@@ -25,4 +26,16 @@ int Enemy::getAttack(){
 
 Item *Enemy::getItem() {
     return this->loot;
+}
+
+std::string Enemy::getClass() {
+    return this->enemyClass;
+}
+
+void Enemy::setClass(std::string Class) {
+    this->enemyClass = Class;
+}
+
+void Enemy::setItem(Item *loot) {
+    this->loot = loot;
 }

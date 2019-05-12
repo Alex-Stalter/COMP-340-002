@@ -12,17 +12,14 @@
 
 class Robot : public Enemy{
 public:
-    Robot(int health, int attack, int shipVal, int itemVal, int shields, int turns);
-    int getShields();
+    Robot(int health, int attack, int shipVal, Item* myItem,std::string Class);
 
-    void setShields(int s);
 
     void taunt();
-    void firstGlance(Player& myPlayer);
+    void firstGlance();
 
 private:
-    int shields;
-    int turns;
+
     Item* myItem;
     int shipVal;
     int itemVal;

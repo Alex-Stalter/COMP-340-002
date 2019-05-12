@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ClassExample.dir/ItemContainer.cpp.o"
   "CMakeFiles/ClassExample.dir/RockPeople.cpp.o"
   "CMakeFiles/ClassExample.dir/Rebels.cpp.o"
+  "CMakeFiles/ClassExample.dir/Bug.cpp.o"
+  "CMakeFiles/ClassExample.dir/Robot.cpp.o"
   "ClassExample.pdb"
   "ClassExample"
 )

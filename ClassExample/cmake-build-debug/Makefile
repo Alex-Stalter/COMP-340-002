@@ -123,6 +123,33 @@ ClassExample/fast:
 	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/build
 .PHONY : ClassExample/fast
 
+Bug.o: Bug.cpp.o
+
+.PHONY : Bug.o
+
+# target to build an object file
+Bug.cpp.o:
+	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/Bug.cpp.o
+.PHONY : Bug.cpp.o
+
+Bug.i: Bug.cpp.i
+
+.PHONY : Bug.i
+
+# target to preprocess a source file
+Bug.cpp.i:
+	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/Bug.cpp.i
+.PHONY : Bug.cpp.i
+
+Bug.s: Bug.cpp.s
+
+.PHONY : Bug.s
+
+# target to generate assembly for a file
+Bug.cpp.s:
+	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/Bug.cpp.s
+.PHONY : Bug.cpp.s
+
 Enemy.o: Enemy.cpp.o
 
 .PHONY : Enemy.o
@@ -312,6 +339,33 @@ Rebels.cpp.s:
 	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/Rebels.cpp.s
 .PHONY : Rebels.cpp.s
 
+Robot.o: Robot.cpp.o
+
+.PHONY : Robot.o
+
+# target to build an object file
+Robot.cpp.o:
+	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/Robot.cpp.o
+.PHONY : Robot.cpp.o
+
+Robot.i: Robot.cpp.i
+
+.PHONY : Robot.i
+
+# target to preprocess a source file
+Robot.cpp.i:
+	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/Robot.cpp.i
+.PHONY : Robot.cpp.i
+
+Robot.s: Robot.cpp.s
+
+.PHONY : Robot.s
+
+# target to generate assembly for a file
+Robot.cpp.s:
+	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/Robot.cpp.s
+.PHONY : Robot.cpp.s
+
 RockPeople.o: RockPeople.cpp.o
 
 .PHONY : RockPeople.o
@@ -402,6 +456,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ClassExample"
+	@echo "... Bug.o"
+	@echo "... Bug.i"
+	@echo "... Bug.s"
 	@echo "... Enemy.o"
 	@echo "... Enemy.i"
 	@echo "... Enemy.s"
@@ -423,6 +480,9 @@ help:
 	@echo "... Rebels.o"
 	@echo "... Rebels.i"
 	@echo "... Rebels.s"
+	@echo "... Robot.o"
+	@echo "... Robot.i"
+	@echo "... Robot.s"
 	@echo "... RockPeople.o"
 	@echo "... RockPeople.i"
 	@echo "... RockPeople.s"

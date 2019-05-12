@@ -12,13 +12,16 @@
 
 class Enemy {
 public:
-    Enemy(int health,int attack,Item* loot);
+    Enemy(int health,int attack,Item* loot,std::string enemyClass);
     void setHealth(int hp);
     void setAttack(int atk);
+    void setClass(std::string Class);
+    void setItem(Item* loot);
 
     int getHealth();
     int getAttack();
     Item* getItem();
+    std::string getClass();
 
     virtual void taunt() = 0;
 
@@ -28,6 +31,7 @@ private:
     int health;
     int attack;
     Item* loot;
+    std::string enemyClass;
 };
 
 

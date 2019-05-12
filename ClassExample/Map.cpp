@@ -14,6 +14,19 @@ Map::~Map(){
 
 }
 void Map::createRooms(){
+
+    Enemy* scoutBug = new Bug(0,0,1, nullptr,"");
+    Enemy* fighterBug = new Bug(0,0,2, nullptr,"");
+    Enemy* destroyerBug = new Bug(0,0,3, nullptr,"");
+    Enemy* scoutRobot = new Robot(0,0,1, nullptr,"");
+    Enemy* fighterRobot = new Robot(0,0,2, nullptr,"");
+    Enemy*  heavyRobot= new Robot(0,0,3, nullptr,"");
+    Enemy* scoutRebel = new Rebels(0,0,1, nullptr,"");
+    Enemy* fighterRock = new RockPeople(0,0,2, nullptr,"");
+    Enemy* heavyRebel = new Rebels(0,0,3, nullptr,"");
+    Enemy* scoutRock = new RockPeople(0,0,1, nullptr,"");
+
+
     ItemContainer* box = new ItemContainer(nullptr);
     ItemContainer* crate = new ItemContainer(nullptr);
     ItemContainer* barrel = new ItemContainer(nullptr);

@@ -47,6 +47,8 @@ void Game::combat() {
     bool enemyStunned = false;
     int stunTime = 0;
     std::cout<<"An enemy ship jumps into view, you ready your guns and prepare to battle. Type Get Help to get commands."<<std::endl;
+    this->currentRoom->getEnemy()->firstGlance();
+    this->currentRoom->getEnemy()->taunt();
     while(this->newPlayer->getHealth()>=0&&this->currentRoom->getEnemy()->getHealth()>=0){
         if(stunTime>0){
             stunTime--;
@@ -79,15 +81,42 @@ void Game::combat() {
                 this->newPlayer->damageHealth(this->currentRoom->getEnemy()->getAttack());
             }
 
-        }else if(this->userInput=="Inventory"){
+        }else if(this->userInput=="Ship"){
+            if(this->secondInput=="Inventory"){
+
+            }else if("Check"){
+                std::cout<<"Your health is: "<<this->newPlayer->getHealth()<<std::endl;
+                std::cout<<"Your rocket attack is: "<<this->newPlayer->getRocket()<<std::endl;
+                std::cout<<"Your laser attack is: "<<this->newPlayer->getLaser()<<std::endl;
+                std::cout<<"Your stun attack is: "<<this->newPlayer->getStun()<<std::endl;
+            }else{
+                int count = -1;
+                for (Item *h:this->newPlayer->getInventory()) {
+                    count++;
+                    if (h->getModifier() > 0) {
+                        if (h->getDescription() == this->secondInput) {
+
+                            this->newPlayer->setHealth(this->newPlayer->getHealth() + h->getModifier());
+                            this->newPlayer->getInventory().erase(this->newPlayer->getInventory().begin() + count);
+                        }
+                    }
+
+                }
+            }
 
 
         }else if(this->userInput=="Get" && this->secondInput=="Help"){
             std::cout<<"Combat Commands:\n"
                        "Attack {Rocket ,Laser ,Stun } \n"
                        "Run {Cardinal}\n"
-                       "Inventory {Check, Use}"<<std::endl;
+                       "Ship {Inventory, Item(enter ), Check(displays ships current health)}"<<std::endl;
         }
+    }
+    if(this->newPlayer->getHealth()<=0){
+        std::cout<<"You have been defeated!"<<std::endl;
+    }else if(this->currentRoom->getEnemy()->getHealth()<=0){
+        this->enemiesKilled++;
+        std::cout<<"The ship breaks apart and leaves some loot for you to search"<<std::endl;
     }
 
 
@@ -106,15 +135,15 @@ void Game::instatiateGame() {
         if (this->newPlayer->getHealth() <= 0) {
             break;
         }
+
         std::cout
                 << "What would you like to do or where would you like to go? You can always just 'Give Up'. To see a list of commands type "
                    "'Get Help'" << std::endl;
         
         //std::getline(std::cin, this->userInput);
-        std::cin >> userInput;
-        if (this->userInput == "Search") {
+        std::cin >> userInput>>secondInput;
 
-            std::cin >> userInput >> secondInput;
+
             if (this->userInput == "Search") {
                 if (this->secondInput == "Debris") {
                     std::cout << "In the debris of a collision you find an upgrade." << std::endl;
@@ -159,11 +188,8 @@ void Game::instatiateGame() {
                 }
 
             } else if (this->userInput == "Give" && this->secondInput == "Up") {
-
-
-            } else if (this->userInput == "GiveUp") {
                 break;
-            } else if (this->userInput == "Use") {
+            }else if (this->userInput == "Use") {
                 int count = -1;
                 for (Item *h:this->newPlayer->getInventory()) {
                     count++;
@@ -193,11 +219,13 @@ void Game::instatiateGame() {
                 }
 
 
+
             }
 
-        }
+
 
 
     }
+    std::cout<<"Your ship breaks apart and you are sucked out into space dying immediately."<<std::endl;
 }
 
