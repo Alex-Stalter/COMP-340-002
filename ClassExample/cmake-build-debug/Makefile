@@ -312,6 +312,33 @@ Player.cpp.s:
 	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/Player.cpp.s
 .PHONY : Player.cpp.s
 
+Robot.o: Robot.cpp.o
+
+.PHONY : Robot.o
+
+# target to build an object file
+Robot.cpp.o:
+	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/Robot.cpp.o
+.PHONY : Robot.cpp.o
+
+Robot.i: Robot.cpp.i
+
+.PHONY : Robot.i
+
+# target to preprocess a source file
+Robot.cpp.i:
+	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/Robot.cpp.i
+.PHONY : Robot.cpp.i
+
+Robot.s: Robot.cpp.s
+
+.PHONY : Robot.s
+
+# target to generate assembly for a file
+Robot.cpp.s:
+	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/Robot.cpp.s
+.PHONY : Robot.cpp.s
+
 Room.o: Room.cpp.o
 
 .PHONY : Room.o
@@ -396,6 +423,9 @@ help:
 	@echo "... Player.o"
 	@echo "... Player.i"
 	@echo "... Player.s"
+	@echo "... Robot.o"
+	@echo "... Robot.i"
+	@echo "... Robot.s"
 	@echo "... Room.o"
 	@echo "... Room.i"
 	@echo "... Room.s"

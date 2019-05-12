@@ -5,12 +5,12 @@
 #include "Bug.h"
 
 
-Bug::Bug(int health, int attack, int shipVal, Item* myItem) : Enemy(health, attack, myItem) {
+Bug::Bug(int health, int attack, int shipVal, int itemVal) : Enemy(health, attack, myItem) {
     this->setHealth(health);
     this->setAttack(attack);
 }
 void Bug::taunt() {
-    std::cout<<"Your four-limbed race will be exterminated!"<<std::endl;
+    std::cout<<"*The raspy voice rings out of your ship's radio* Your four-limbed race will be exterminated!"<<std::endl;
 }
 
 void Bug::firstGlance() {

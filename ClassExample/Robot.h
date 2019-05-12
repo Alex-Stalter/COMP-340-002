@@ -2,17 +2,16 @@
 // Created by Malmberg, Raina on 2019-05-11.
 //
 
-#ifndef CLASSEXAMPLE_BUGSCOUT_H
-#define CLASSEXAMPLE_BUGSCOUT_H
+#ifndef CLASSEXAMPLE_ROBOT_H
+#define CLASSEXAMPLE_ROBOT_H
 
 #include "Enemy.h"
 #include "Player.h"
 
-//of the humanoid Scorpion race
 
-class Bug : public Enemy {
+class Robot : public Enemy{
 public:
-    Bug(int health, int attack, int shipVal, int itemVal);
+    Robot(int health, int attack, int shipVal, int itemVal);
 
     void taunt();
     void firstGlance();
@@ -25,4 +24,4 @@ private:
 };
 
 
-#endif //CLASSEXAMPLE_BUGSCOUT_H
+#endif //CLASSEXAMPLE_ROBOT_H

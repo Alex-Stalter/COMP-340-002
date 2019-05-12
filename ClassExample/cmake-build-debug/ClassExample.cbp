@@ -120,6 +120,12 @@
 		<Unit filename="/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Player.h">
 			<Option target="ClassExample"/>
 		</Unit>
+		<Unit filename="/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Robot.cpp">
+			<Option target="ClassExample"/>
+		</Unit>
+		<Unit filename="/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Robot.h">
+			<Option target="ClassExample"/>
+		</Unit>
 		<Unit filename="/Users/rmalmberg/Documents/340-Project2/COMP-340-002/ClassExample/Room.cpp">
 			<Option target="ClassExample"/>
 		</Unit>
