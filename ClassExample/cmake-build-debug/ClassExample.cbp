@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Bug.cpp">
+			<Option target="ClassExample"/>
+		</Unit>
+		<Unit filename="/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Bug.h">
+			<Option target="ClassExample"/>
+		</Unit>
 		<Unit filename="/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.cpp">
 			<Option target="ClassExample"/>
 		</Unit>
@@ -120,6 +126,12 @@
 			<Option target="ClassExample"/>
 		</Unit>
 		<Unit filename="/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Rebels.h">
+			<Option target="ClassExample"/>
+		</Unit>
+		<Unit filename="/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Robot.cpp">
+			<Option target="ClassExample"/>
+		</Unit>
+		<Unit filename="/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Robot.h">
 			<Option target="ClassExample"/>
 		</Unit>
 		<Unit filename="/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/RockPeople.cpp">

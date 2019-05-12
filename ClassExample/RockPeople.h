@@ -8,11 +8,11 @@
 
 class RockPeople: public Enemy{
 public:
-    RockPeople(int health, int attack,  int shipVal, Item* myItem);
+    RockPeople(int health, int attack,  int shipVal, Item* myItem,std::string Class);
     void taunt();
     void firstGlance();
 private:
-    Item* myItem;
+
     int shipVal;
 
 };
