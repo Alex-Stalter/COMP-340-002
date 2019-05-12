@@ -28,6 +28,7 @@ public:
 private:
     Player* player;
     std::vector<Room*> roomList;
+    std::vector<Item*> itemList;
 
 
 };

@@ -48,7 +48,7 @@ void Map::createRooms(){
     Room* fourteen = new Room("Sector 14: Orion's Belt",false, nullptr, nullptr);
     Room* fifteen = new Room("Sector 15: Phobos",false, nullptr, nullptr);
     Room* sixteen = new Room("Sector 16: Kepler 452b",false, nullptr, nullptr);
-    Room* bossRoom = new Room("You have been wared to an unknown sector not on any maps and in front of you lies the flagship of the rebel fleet.",false, nullptr, nullptr);
+    Room* bossRoom = new Room("Unkown Sector",false, nullptr, nullptr);
     this->roomList.push_back(one);
     this->roomList.push_back(two);
     this->roomList.push_back(three);

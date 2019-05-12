@@ -21,6 +21,7 @@ private:
     Player* newPlayer;
     Map* newMap;
     int enemiesKilled;
+    int jumpsLeft;
     
 };
 

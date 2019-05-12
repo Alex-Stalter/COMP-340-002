@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Bug.h
+Enemy.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.h
+Player.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Player.h
+
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.h
 string
 -
@@ -49,6 +55,14 @@ Enemy.h
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.h
 Item.h
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
+Bug.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Bug.h
+Robot.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Robot.h
+Rebels.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Rebels.h
+RockPeople.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/RockPeople.h
 
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Player.h
 iostream
@@ -57,6 +71,20 @@ vector
 -
 Item.h
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
+
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Rebels.h
+Enemy.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.h
+
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Robot.h
+Enemy.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.h
+Player.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Player.h
+
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/RockPeople.h
+Enemy.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.h
 
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Room.h
 string
