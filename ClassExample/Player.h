@@ -22,10 +22,14 @@ public:
     int getHealth();
     int getAttack();
     bool isStunned();
+    int getLaser();
+    int getRocket();
+    int getStun();
     std::vector<Item*> getInventory();
 
     //functions for changing the health and attack
     void setDamage(int attack);
+    void calcGuns();
     void setHealth(int health);
     void damageHealth(int damage);
     void addItem(Item* loot);
@@ -36,6 +40,9 @@ private:
     int health;
     int attackDamage;
     bool stunned;
+    int rocketAttack;
+    int laserAttack;
+    int stunAttack;
 
 };
 
