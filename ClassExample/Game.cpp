@@ -12,6 +12,7 @@ Game::Game(){
     this->newMap = new Map(newPlayer);
     int shipChoice = 0;
     this->enemiesKilled = 0;
+    this->jumpsLeft = 1;
 
 
     //get userInput for player name
@@ -136,9 +137,12 @@ void Game::instatiateGame() {
             break;
         }
 
-        std::cout
-                << "What would you like to do or where would you like to go? You can always just 'Give Up'. To see a list of commands type "
+        std::cout<< "What would you like to do or where would you like to go? You can always just 'Give Up'. To see a list of commands type "
                    "'Get Help'" << std::endl;
+        if(this->jumpsLeft>0){
+            std::cout<<"You have: "<<this->jumpsLeft<<" jumps left."<<std::endl;
+        }
+
         
         //std::getline(std::cin, this->userInput);
         std::cin >> userInput>>secondInput;
@@ -213,7 +217,14 @@ void Game::instatiateGame() {
                              "Inventory Check"
                              "Use {Item in inventory}" << std::endl;
             } else {
+                this->jumpsLeft--;
+                if(this->jumpsLeft<=0){
+                    this->currentRoom = this->newMap->getList()[16];
+                    std::cout<<"You have been warped to an unknown sector not on any maps and in front of you lies the flagship of the rebel fleet."<<std::endl;
+                }
                 this->currentRoom = this->currentRoom->getRoom(this->secondInput);
+
+
                 if (this->currentRoom->getEnemy() != nullptr) {
                     combat();
                 }
