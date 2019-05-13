@@ -16,6 +16,7 @@ public:
     int getModifier();
     bool getArmor();
     virtual void attribute()= 0;
+    void setModifier(int mod);
 
 
 private:

@@ -202,30 +202,35 @@ void Game::instatiateGame() {
                 } else {
                     std::cout << "You have: " << std::endl;
                     for (Item *h:this->newPlayer->getInventory()) {
-                        std::cout << h->getDescription() << std::endl;
+                        std::cout << h->getDescription()<<" :"<<std::endl;
+                        h->attribute();
                     }
                 }
 
             } else if (this->userInput == "Give" && this->secondInput == "Up") {
                 break;
             }else if (this->userInput == "Use") {
-                int count = -1;
+
                 for (Item *h:this->newPlayer->getInventory()) {
-                    count++;
+
                     if (h->getModifier() > 0) {
                         if (h->getDescription() == this->secondInput) {
                                 if(h->getArmor()){
                                     this->newPlayer->setHealth(this->newPlayer->getHealth() + h->getModifier());
-                                    this->newPlayer->getInventory().erase(this->newPlayer->getInventory().begin() + count);
+                                    h->setModifier(0);
                                 }else{
                                     this->newPlayer->setDamage(this->newPlayer->getAttack() + h->getModifier());
+                                    std::cout<<"Attack is now: "<<this->newPlayer->getAttack()<<std::endl;
                                     this->newPlayer->calcGuns();
-                                    this->newPlayer->getInventory().erase(this->newPlayer->getInventory().begin() + count);
+                                    h->setModifier(0);
                                 }
 
 
                         }
+                    }else{
+                        std::cout<<"This upgrade is spent."<<std::endl;
                     }
+
 
                 }
             } else if (this->userInput == "Get" && this->secondInput == "Help") {
@@ -238,7 +243,7 @@ void Game::instatiateGame() {
                              "Give Up {exits the game}\n"
                              "Inventory Check"
                              "Use {Item in inventory}" << std::endl;
-            } else {
+            } else if(this->userInput=="Go"){
                 this->jumpsLeft--;
                 if(this->jumpsLeft<=0){
                     this->currentRoom = this->newMap->getList()[16];
@@ -253,6 +258,8 @@ void Game::instatiateGame() {
 
 
 
+            }else{
+                std::cout<<"that is not a valid command!"<<std::endl;
             }
 
 

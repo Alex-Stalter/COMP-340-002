@@ -27,10 +27,10 @@ void Map::createRooms(){
     Enemy* scoutRock = new RockPeople(0,0,1, nullptr,"");
     Enemy* boos = new Boss(0,0,3,nullptr,"");
 
-    LaserUpgrade* lzr5 = new LaserUpgrade("a small laser upgrade", 5,false);
-    LaserUpgrade* lzr10 = new LaserUpgrade("a medium laser upgrade", 10,false);
-    LaserUpgrade* lzr15 = new LaserUpgrade("a large laser upgrade", 15,false);
-    RocketUpgrade* rkt5 = new RocketUpgrade("a small rocket upgrade", 5,false);
+    LaserUpgrade* lzr5 = new LaserUpgrade("sLaser", 5,false);
+    LaserUpgrade* lzr10 = new LaserUpgrade("mLaser", 10,false);
+    LaserUpgrade* lzr15 = new LaserUpgrade("gLaser", 15,false);
+    RocketUpgrade* rkt5 = new RocketUpgrade("sRocket", 5,false);
 
 
     ItemContainer* box = new ItemContainer(lzr10);
