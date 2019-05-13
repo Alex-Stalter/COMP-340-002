@@ -33,7 +33,6 @@ void Map::createRooms(){
 
 
     this->itemList.push_back(rkt15);
-    std::shuffle(this->itemList.begin(),this->itemList.end(),std::mt19937(std::random_device()()));
     this->itemList.push_back(hull1);
     this->itemList.push_back(hull2);
     this->itemList.push_back(hull3);
@@ -44,14 +43,8 @@ void Map::createRooms(){
     this->itemList.push_back(hull8);
     this->itemList.push_back(hull9);
 
-    //knowledge courtesy of https://en.cppreference.com/w/cpp/algorithm/random_shuffle
-    std::random_device rd;
-    std::mt19937 g(rd());
 
-    //use algorithm shuffle
-    auto i = itemList.begin();
-    auto k = itemList.end();
-    std::shuffle(i, k, g);
+    std::shuffle(this->itemList.begin(),this->itemList.end(),std::mt19937(std::random_device()()));
 
 
     Enemy* scoutBug = new Bug(0,0,1, this->itemList.back(),"");
