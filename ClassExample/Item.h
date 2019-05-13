@@ -17,7 +17,7 @@ public:
     bool getArmor();
     virtual void attribute()= 0;
     void setModifier(int mod);
-
+    void setArmor(bool armor);
 
 private:
     std::string description;

@@ -25,6 +25,8 @@ bool Item::getArmor() {
 
 void Item::setModifier(int mod) {
     this->modifier = mod;
-
+}
+void Item::setArmor(bool hull) {
+    this->armor = hull;
 }
 
