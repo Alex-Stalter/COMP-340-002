@@ -4,9 +4,10 @@
 
 #include "Item.h"
 
-Item::Item(std::string description,int modifier) {
+Item::Item(std::string description,int modifier,bool armor) {
     this->description = description;
     this->modifier = modifier;
+    this->armor = armor;
 
 }
 
@@ -16,5 +17,9 @@ std::string Item::getDescription() {
 
 int Item::getModifier() {
     return this->modifier;
+}
+
+bool Item::getArmor() {
+    return this->armor;
 }
 
