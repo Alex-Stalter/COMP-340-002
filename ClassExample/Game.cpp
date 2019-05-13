@@ -47,6 +47,7 @@ Game::~Game(){
 void Game::combat() {
     bool enemyStunned = false;
     int stunTime = 0;
+    int rocketsLeft = 2;
     std::cout<<"An enemy ship jumps into view, you ready your guns and prepare to battle. Type Get Help to get commands."<<std::endl;
     this->currentRoom->getEnemy()->firstGlance();
     this->currentRoom->getEnemy()->taunt();
@@ -62,8 +63,9 @@ void Game::combat() {
         std::cout<<"The enemy has "<<this->currentRoom->getEnemy()->getHealth()<<" health."<<std::endl;
         std::cin>>userInput>>secondInput;
         if(this->userInput=="Attack"){
-            if(this->secondInput=="Rocket"){
+            if(this->secondInput=="Rocket"&&rocketsLeft>0){
                 this->currentRoom->getEnemy()->setHealth(this->currentRoom->getEnemy()->getHealth()-this->newPlayer->getRocket());
+                rocketsLeft--;
                 if(!enemyStunned){
                     this->newPlayer->damageHealth(this->currentRoom->getEnemy()->getAttack());
                 }
@@ -77,6 +79,8 @@ void Game::combat() {
                 enemyStunned = true;
                 stunTime +=2;
 
+            }else{
+                std::cout<<"That attack is unavailible"<<std::endl;
             }
         }else if(this->userInput=="Run"){
 
@@ -91,23 +95,41 @@ void Game::combat() {
 
         }else if(this->userInput=="Ship"){
             if(this->secondInput=="Inventory"){
-
+                if (this->newPlayer->getInventory().empty()) {
+                    std::cout << "Your inventory is empty." << std::endl;
+                } else {
+                    std::cout << "You have: " << std::endl;
+                    for (Item *h:this->newPlayer->getInventory()) {
+                        std::cout << h->getDescription()<<" :"<<std::endl;
+                        h->attribute();
+                    }
+                }
             }else if("Check"){
                 std::cout<<"Your health is: "<<this->newPlayer->getHealth()<<std::endl;
                 std::cout<<"Your rocket attack is: "<<this->newPlayer->getRocket()<<std::endl;
                 std::cout<<"Your laser attack is: "<<this->newPlayer->getLaser()<<std::endl;
                 std::cout<<"Your stun attack is: "<<this->newPlayer->getStun()<<std::endl;
             }else{
-                int count = -1;
                 for (Item *h:this->newPlayer->getInventory()) {
-                    count++;
+
                     if (h->getModifier() > 0) {
                         if (h->getDescription() == this->secondInput) {
+                            if(h->getArmor()){
+                                this->newPlayer->setHealth(this->newPlayer->getHealth() + h->getModifier());
+                                h->setModifier(0);
+                            }else{
+                                this->newPlayer->setDamage(this->newPlayer->getAttack() + h->getModifier());
+                                std::cout<<"Attack is now: "<<this->newPlayer->getAttack()<<std::endl;
+                                this->newPlayer->calcGuns();
+                                h->setModifier(0);
+                            }
 
-                            this->newPlayer->setHealth(this->newPlayer->getHealth() + h->getModifier());
-                            this->newPlayer->getInventory().erase(this->newPlayer->getInventory().begin() + count);
+
                         }
+                    }else{
+                        std::cout<<"This upgrade is spent."<<std::endl;
                     }
+
 
                 }
             }
@@ -266,6 +288,11 @@ void Game::instatiateGame() {
 
 
     }
-    std::cout<<"Your ship breaks apart and you are sucked out into space dying immediately."<<std::endl;
+    if(this->newPlayer->getHealth()>0&&this->userInput!="Give"&&this->secondInput!="Up"){
+        std::cout<<"You have defeated the rebel flagship and freed the solar system from their evil reign!"<<std::endl;
+    }else{
+        std::cout<<"Your ship breaks apart and you are sucked out into space dying immediately."<<std::endl;
+    }
+
 }
 
