@@ -26,13 +26,22 @@ void Map::createRooms(){
     Enemy* heavyRebel = new Rebels(0,0,3, nullptr,"");
     Enemy* scoutRock = new RockPeople(0,0,1, nullptr,"");
 
+    LaserUpgrade* lzr5 = new LaserUpgrade("a small laser upgrade", 5);
+    LaserUpgrade* lzr10 = new LaserUpgrade("a medium laser upgrade", 10);
+    LaserUpgrade* lzr15 = new LaserUpgrade("a large laser upgrade", 15);
+    RocketUpgrade* rkt5 = new RocketUpgrade("a small rocket upgrade", 5);
 
-    ItemContainer* box = new ItemContainer(nullptr);
-    ItemContainer* crate = new ItemContainer(nullptr);
+
+    ItemContainer* box = new ItemContainer(lzr10);
+    ItemContainer* crate = new ItemContainer(rkt5);
     ItemContainer* barrel = new ItemContainer(nullptr);
     ItemContainer* debris = new ItemContainer(nullptr);
+    ItemContainer* debris1 = new ItemContainer(lzr5);
+    ItemContainer* debris2 = new ItemContainer(nullptr);
+    ItemContainer* debris3 = new ItemContainer(nullptr);
+    ItemContainer* cache = new ItemContainer(nullptr);
 
-    Room* one = new Room("Sector 1: Planet X",false, nullptr, nullptr);
+    Room* one = new Room("Sector 1: Planet X",false, nullptr, debris1);
     Room* two = new Room("Sector 2: Callisto",true, nullptr, box);
     Room* three = new Room("Sector 3: Geminids",false, fighterBug, nullptr);
     Room* four = new Room("Sector 4: Titan",false, destroyerBug, nullptr);
