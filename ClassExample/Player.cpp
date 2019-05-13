@@ -32,7 +32,7 @@ void Player::setHealth(int health){
     this->health = health;
 }
 void Player::damageHealth(int damage){
-    this->health =-damage;
+    this->health = this->health - damage;
 }
 bool Player::isStunned(){
     return this->stunned;

@@ -12,7 +12,7 @@ Game::Game(){
     this->newMap = new Map(newPlayer);
     int shipChoice = 0;
     this->enemiesKilled = 0;
-    this->jumpsLeft = 1;
+    this->jumpsLeft = 12;
 
 
     //get userInput for player name
@@ -27,7 +27,7 @@ Game::Game(){
     std::cin>>shipChoice;
     if(shipChoice==1){
         this->newPlayer->setHealth(100);
-        this->newPlayer->setDamage(10);
+        this->newPlayer->setDamage(100);
     }else if (shipChoice == 2){
         this->newPlayer->setHealth(80);
         this->newPlayer->setDamage(25);
@@ -54,6 +54,8 @@ void Game::combat() {
         if(stunTime>0){
             stunTime--;
         }
+        std::cout<<"Your Health is: "<<this->newPlayer->getHealth()<<std::endl;
+        std::cout<<"The enemy has "<<this->currentRoom->getEnemy()->getHealth()<<" health."<<std::endl;
         std::cin>>userInput>>secondInput;
         if(this->userInput=="Attack"){
             if(this->secondInput=="Rocket"){
@@ -74,11 +76,12 @@ void Game::combat() {
             }
         }else if(this->userInput=="Run"){
             std::default_random_engine generator;
-            std::uniform_int_distribution<int> distribution(1,100);
+            std::uniform_int_distribution<int> distribution(0,1);
             int escapeChance = distribution(generator);
-            if(escapeChance>49){
+            if(escapeChance==2){
                 this->currentRoom = this->currentRoom->getRoom(this->secondInput);
             }else if(!enemyStunned){
+                std::cout<<escapeChance<<std::endl;
                 this->newPlayer->damageHealth(this->currentRoom->getEnemy()->getAttack());
             }
 
@@ -110,7 +113,7 @@ void Game::combat() {
             std::cout<<"Combat Commands:\n"
                        "Attack {Rocket ,Laser ,Stun } \n"
                        "Run {Cardinal}\n"
-                       "Ship {Inventory, Item(enter ), Check(displays ships current health)}"<<std::endl;
+                       "Ship {Inventory, Item(enter usable item), Check(displays ships current health)}"<<std::endl;
         }
     }
     if(this->newPlayer->getHealth()<=0){
@@ -118,6 +121,7 @@ void Game::combat() {
     }else if(this->currentRoom->getEnemy()->getHealth()<=0){
         this->enemiesKilled++;
         std::cout<<"The ship breaks apart and leaves some loot for you to search"<<std::endl;
+        this->currentRoom->killEnemy();
     }
 
 
@@ -142,6 +146,7 @@ void Game::instatiateGame() {
         if(this->jumpsLeft>0){
             std::cout<<"You have: "<<this->jumpsLeft<<" jumps left."<<std::endl;
         }
+        std::cout<<"You have destroyed "<<this->enemiesKilled<<" enemy ships"<<std::endl;
 
         
         //std::getline(std::cin, this->userInput);
@@ -149,7 +154,9 @@ void Game::instatiateGame() {
 
 
             if (this->userInput == "Search") {
-                if (this->secondInput == "Debris") {
+                if(this->currentRoom->getBox()== nullptr){
+                    std::cout<<"you find nothing of interest here"<<std::endl;
+                }else if (this->secondInput == "Debris") {
                     std::cout << "In the debris of a collision you find an upgrade." << std::endl;
                 } else if (this->secondInput == "Ship") {
                     std::cout << "You search through the wreckage of the ship you destroyed and find an upgrade."
@@ -176,6 +183,8 @@ void Game::instatiateGame() {
                     std::cout
                             << "Captain, the blockade around sector 1 has been lifted and we are free to travel there."
                             << std::endl;
+                }else{
+                    std::cout<<"You cannot open the blockade yet you have to kill more enemy ships"<<std::endl;
                 }
 
             } else if (this->userInput == "Look") {
@@ -199,9 +208,16 @@ void Game::instatiateGame() {
                     count++;
                     if (h->getModifier() > 0) {
                         if (h->getDescription() == this->secondInput) {
+                                if(h->getArmor()){
+                                    this->newPlayer->setHealth(this->newPlayer->getHealth() + h->getModifier());
+                                    this->newPlayer->getInventory().erase(this->newPlayer->getInventory().begin() + count);
+                                }else{
+                                    this->newPlayer->setDamage(this->newPlayer->getAttack() + h->getModifier());
+                                    this->newPlayer->calcGuns();
+                                    this->newPlayer->getInventory().erase(this->newPlayer->getInventory().begin() + count);
+                                }
 
-                            this->newPlayer->setHealth(this->newPlayer->getHealth() + h->getModifier());
-                            this->newPlayer->getInventory().erase(this->newPlayer->getInventory().begin() + count);
+
                         }
                     }
 
