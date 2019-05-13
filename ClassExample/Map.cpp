@@ -14,15 +14,14 @@ Map::~Map(){
 
 }
 void Map::createRooms(){
-<<<<<<< HEAD
-=======
+
     Item* lzr5 = new LaserUpgrade("sLaser", 5,false);
     Item* lzr10 = new LaserUpgrade("mLaser", 10,false);
     Item* lzr15 = new LaserUpgrade("gLaser", 15,false);
     Item* rkt5 = new RocketUpgrade("sRocket", 5,false);
     Item* rkt10 = new RocketUpgrade("mRocket", 10,false);
     Item* rkt15 = new RocketUpgrade("gRocket", 15,false);
->>>>>>> master
+
 
     this->itemList.push_back(rkt15);
 
@@ -39,12 +38,7 @@ void Map::createRooms(){
     Enemy* scoutRock = new RockPeople(0,0,1, nullptr,"");
 
     Enemy* boos = new Boss(0,0,3,nullptr,"");
-
-    LaserUpgrade* lzr5 = new LaserUpgrade("sLaser", 5,false);
-    LaserUpgrade* lzr10 = new LaserUpgrade("mLaser", 10,false);
-    LaserUpgrade* lzr15 = new LaserUpgrade("gLaser", 15,false);
-    RocketUpgrade* rkt5 = new RocketUpgrade("sRocket", 5,false);
-
+    
 
     ItemContainer* box = new ItemContainer(lzr10);
     ItemContainer* crate = new ItemContainer(rkt5);
