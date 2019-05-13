@@ -27,7 +27,7 @@ Game::Game(){
     std::cin>>shipChoice;
     if(shipChoice==1){
         this->newPlayer->setHealth(100);
-        this->newPlayer->setDamage(100);
+        this->newPlayer->setDamage(10);
     }else if (shipChoice == 2){
         this->newPlayer->setHealth(80);
         this->newPlayer->setDamage(20);
@@ -131,6 +131,9 @@ void Game::combat() {
                     }
 
 
+                }
+                if(!enemyStunned){
+                    this->newPlayer->damageHealth(this->currentRoom->getEnemy()->getAttack());
                 }
             }
 
@@ -239,6 +242,7 @@ void Game::instatiateGame() {
                         if (h->getDescription() == this->secondInput) {
                                 if(h->getArmor()){
                                     this->newPlayer->setHealth(this->newPlayer->getHealth() + h->getModifier());
+                                    std::cout<<"Your health is now: "<<this->newPlayer->getHealth()<<std::endl;
                                     h->setModifier(0);
                                 }else{
                                     this->newPlayer->setDamage(this->newPlayer->getAttack() + h->getModifier());
