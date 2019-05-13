@@ -50,7 +50,11 @@ void Game::combat() {
     std::cout<<"An enemy ship jumps into view, you ready your guns and prepare to battle. Type Get Help to get commands."<<std::endl;
     this->currentRoom->getEnemy()->firstGlance();
     this->currentRoom->getEnemy()->taunt();
+
     while(this->newPlayer->getHealth()>=0&&this->currentRoom->getEnemy()->getHealth()>=0){
+        if(this->currentRoom->getEnemy()== nullptr) {
+            break;
+        }
         if(stunTime>0){
             stunTime--;
         }
@@ -75,15 +79,15 @@ void Game::combat() {
 
             }
         }else if(this->userInput=="Run"){
-            std::default_random_engine generator;
-            std::uniform_int_distribution<int> distribution(0,1);
-            int escapeChance = distribution(generator);
-            if(escapeChance==2){
+
                 this->currentRoom = this->currentRoom->getRoom(this->secondInput);
-            }else if(!enemyStunned){
-                std::cout<<escapeChance<<std::endl;
-                this->newPlayer->damageHealth(this->currentRoom->getEnemy()->getAttack());
+            if(this->currentRoom->getEnemy()!= nullptr) {
+                combat();
+            }else{
+                break;
             }
+
+
 
         }else if(this->userInput=="Ship"){
             if(this->secondInput=="Inventory"){
@@ -116,7 +120,9 @@ void Game::combat() {
                        "Ship {Inventory, Item(enter usable item), Check(displays ships current health)}"<<std::endl;
         }
     }
-    if(this->newPlayer->getHealth()<=0){
+    if(this->currentRoom->getEnemy()==nullptr){
+        std::cout<<"You have escaped from the enemy."<<std::endl;
+    }else if(this->newPlayer->getHealth()<=0){
         std::cout<<"You have been defeated!"<<std::endl;
     }else if(this->currentRoom->getEnemy()->getHealth()<=0){
         this->enemiesKilled++;

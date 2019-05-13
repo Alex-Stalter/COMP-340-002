@@ -8,15 +8,15 @@ Boss::Boss(int health, int attack, int shipVal, Item* myItem,std::string Class) 
     this->shipVal = shipVal;
     this->setItem(myItem);
     if(this->shipVal==1){
-        this->setHealth(60);
+        this->setHealth(80);
         this->setAttack(8);
         this->setClass("Scout");
     }else if(this->shipVal==2){
-        this->setHealth(65);
+        this->setHealth(85);
         this->setAttack(6);
         this->setClass("Fighter");
     }else if(this->shipVal==3){
-        this->setHealth(75);
+        this->setHealth(95);
         this->setAttack(5);
         this->setClass("Star Destroyer");
     }

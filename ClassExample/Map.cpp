@@ -25,11 +25,12 @@ void Map::createRooms(){
     Enemy* fighterRock = new RockPeople(0,0,2, nullptr,"");
     Enemy* heavyRebel = new Rebels(0,0,3, nullptr,"");
     Enemy* scoutRock = new RockPeople(0,0,1, nullptr,"");
+    Enemy* boos = new Boss(0,0,3,nullptr,"");
 
-    LaserUpgrade* lzr5 = new LaserUpgrade("a small laser upgrade", 5);
-    LaserUpgrade* lzr10 = new LaserUpgrade("a medium laser upgrade", 10);
-    LaserUpgrade* lzr15 = new LaserUpgrade("a large laser upgrade", 15);
-    RocketUpgrade* rkt5 = new RocketUpgrade("a small rocket upgrade", 5);
+    LaserUpgrade* lzr5 = new LaserUpgrade("a small laser upgrade", 5,false);
+    LaserUpgrade* lzr10 = new LaserUpgrade("a medium laser upgrade", 10,false);
+    LaserUpgrade* lzr15 = new LaserUpgrade("a large laser upgrade", 15,false);
+    RocketUpgrade* rkt5 = new RocketUpgrade("a small rocket upgrade", 5,false);
 
 
     ItemContainer* box = new ItemContainer(lzr10);
@@ -37,9 +38,6 @@ void Map::createRooms(){
     ItemContainer* barrel = new ItemContainer(nullptr);
     ItemContainer* debris = new ItemContainer(nullptr);
     ItemContainer* debris1 = new ItemContainer(lzr5);
-    ItemContainer* debris2 = new ItemContainer(nullptr);
-    ItemContainer* debris3 = new ItemContainer(nullptr);
-    ItemContainer* cache = new ItemContainer(nullptr);
 
     Room* one = new Room("Sector 1: Planet X",false, nullptr, debris1);
     Room* two = new Room("Sector 2: Callisto",true, nullptr, box);
@@ -56,8 +54,8 @@ void Map::createRooms(){
     Room* thirteen = new Room("Sector 13: Astroid field",false, fighterRock, nullptr);
     Room* fourteen = new Room("Sector 14: Orion's Belt",false, heavyRobot, nullptr);
     Room* fifteen = new Room("Sector 15: Phobos",false, scoutRobot, nullptr);
-    Room* sixteen = new Room("Sector 16: Kepler 452b",false, nullptr, nullptr);
-    Room* bossRoom = new Room("Unkown Sector",false, scoutBug, nullptr);
+    Room* sixteen = new Room("Sector 16: Kepler 452b",false, scoutBug, nullptr);
+    Room* bossRoom = new Room("Unkown Sector",false, boos, nullptr);
     this->roomList.push_back(one);
     this->roomList.push_back(two);
     this->roomList.push_back(three);

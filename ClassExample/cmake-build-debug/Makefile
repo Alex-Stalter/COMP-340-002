@@ -123,6 +123,33 @@ ClassExample/fast:
 	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/build
 .PHONY : ClassExample/fast
 
+Boss.o: Boss.cpp.o
+
+.PHONY : Boss.o
+
+# target to build an object file
+Boss.cpp.o:
+	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/Boss.cpp.o
+.PHONY : Boss.cpp.o
+
+Boss.i: Boss.cpp.i
+
+.PHONY : Boss.i
+
+# target to preprocess a source file
+Boss.cpp.i:
+	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/Boss.cpp.i
+.PHONY : Boss.cpp.i
+
+Boss.s: Boss.cpp.s
+
+.PHONY : Boss.s
+
+# target to generate assembly for a file
+Boss.cpp.s:
+	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/Boss.cpp.s
+.PHONY : Boss.cpp.s
+
 Bug.o: Bug.cpp.o
 
 .PHONY : Bug.o
@@ -257,6 +284,33 @@ ItemContainer.s: ItemContainer.cpp.s
 ItemContainer.cpp.s:
 	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/ItemContainer.cpp.s
 .PHONY : ItemContainer.cpp.s
+
+LaserUpgrade.o: LaserUpgrade.cpp.o
+
+.PHONY : LaserUpgrade.o
+
+# target to build an object file
+LaserUpgrade.cpp.o:
+	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/LaserUpgrade.cpp.o
+.PHONY : LaserUpgrade.cpp.o
+
+LaserUpgrade.i: LaserUpgrade.cpp.i
+
+.PHONY : LaserUpgrade.i
+
+# target to preprocess a source file
+LaserUpgrade.cpp.i:
+	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/LaserUpgrade.cpp.i
+.PHONY : LaserUpgrade.cpp.i
+
+LaserUpgrade.s: LaserUpgrade.cpp.s
+
+.PHONY : LaserUpgrade.s
+
+# target to generate assembly for a file
+LaserUpgrade.cpp.s:
+	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/LaserUpgrade.cpp.s
+.PHONY : LaserUpgrade.cpp.s
 
 Map.o: Map.cpp.o
 
@@ -393,6 +447,33 @@ RockPeople.cpp.s:
 	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/RockPeople.cpp.s
 .PHONY : RockPeople.cpp.s
 
+RocketUpgrade.o: RocketUpgrade.cpp.o
+
+.PHONY : RocketUpgrade.o
+
+# target to build an object file
+RocketUpgrade.cpp.o:
+	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/RocketUpgrade.cpp.o
+.PHONY : RocketUpgrade.cpp.o
+
+RocketUpgrade.i: RocketUpgrade.cpp.i
+
+.PHONY : RocketUpgrade.i
+
+# target to preprocess a source file
+RocketUpgrade.cpp.i:
+	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/RocketUpgrade.cpp.i
+.PHONY : RocketUpgrade.cpp.i
+
+RocketUpgrade.s: RocketUpgrade.cpp.s
+
+.PHONY : RocketUpgrade.s
+
+# target to generate assembly for a file
+RocketUpgrade.cpp.s:
+	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/RocketUpgrade.cpp.s
+.PHONY : RocketUpgrade.cpp.s
+
 Room.o: Room.cpp.o
 
 .PHONY : Room.o
@@ -456,6 +537,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ClassExample"
+	@echo "... Boss.o"
+	@echo "... Boss.i"
+	@echo "... Boss.s"
 	@echo "... Bug.o"
 	@echo "... Bug.i"
 	@echo "... Bug.s"
@@ -471,6 +555,9 @@ help:
 	@echo "... ItemContainer.o"
 	@echo "... ItemContainer.i"
 	@echo "... ItemContainer.s"
+	@echo "... LaserUpgrade.o"
+	@echo "... LaserUpgrade.i"
+	@echo "... LaserUpgrade.s"
 	@echo "... Map.o"
 	@echo "... Map.i"
 	@echo "... Map.s"
@@ -486,6 +573,9 @@ help:
 	@echo "... RockPeople.o"
 	@echo "... RockPeople.i"
 	@echo "... RockPeople.s"
+	@echo "... RocketUpgrade.o"
+	@echo "... RocketUpgrade.i"
+	@echo "... RocketUpgrade.s"
 	@echo "... Room.o"
 	@echo "... Room.i"
 	@echo "... Room.s"

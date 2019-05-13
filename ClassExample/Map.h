@@ -16,6 +16,7 @@
 #include "RockPeople.h"
 #include "RocketUpgrade.h"
 #include "LaserUpgrade.h"
+#include "Boss.h"
 //Map is a large class that sets up the environment of the entire game and is where enemies items chests and rooms are created
 class Map {
 
