@@ -187,7 +187,7 @@ void Game::instatiateGame() {
             if (this->userInput == "Search") {
                 if(this->currentRoom->getBox()== nullptr){
                     std::cout<<"you find nothing of interest here"<<std::endl;
-                }else if (this->secondInput == "Debris") {
+                }else if (this->secondInput == "Debris"||this->secondInput=="Station"||this->secondInput=="Junk") {
                     std::cout << "In the debris of a collision you find an upgrade." << std::endl;
                 } else if (this->secondInput == "Ship") {
                     std::cout << "You search through the wreckage of the ship you destroyed and find an upgrade."
