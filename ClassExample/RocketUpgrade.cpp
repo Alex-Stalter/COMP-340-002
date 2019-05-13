@@ -9,5 +9,5 @@ RocketUpgrade::RocketUpgrade(std::string description, int modifier,bool armor) :
 }
 
 void RocketUpgrade::attribute() {
-    std::cout<<"This small infrared filter can be added to your ship's lasers, granting "<< this->getModifier() << "atk." <<std::endl;
+    std::cout<<"This rocket mod can be added to your rocket launcher, granting "<< this->getModifier() << "atk." <<std::endl;
 }
