@@ -131,6 +131,7 @@ void Map::setDirection(){
     this->roomList[13]->setRoom(nullptr,roomList[14],roomList[10],roomList[12]);
     this->roomList[14]->setRoom(nullptr,roomList[15],roomList[9],roomList[13]);
     this->roomList[15]->setRoom(nullptr,nullptr,roomList[8],roomList[14]);
+    this->roomList[16]->setRoom(nullptr,nullptr,nullptr,nullptr);
 
 }
 
