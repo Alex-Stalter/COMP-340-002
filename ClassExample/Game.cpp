@@ -22,7 +22,7 @@ Game::Game(){
     std::cout << "Beware on your adventure, " << newPlayer->getName() << ".\n~~~~~~~\n"<<std::endl;
     std::cout<<"Please enter a number to choose your ship: \n"
                "1:Medium Fighter: Health: 100 BaseAttack: 10\n"
-               "2:Small Scout: Health: 80 Base Attack: 25\n"
+               "2:Small Scout: Health: 80 Base Attack: 20\n"
                "3:Heavy Frigate: Health: 150 Base Attack: 6"<<std::endl;
     std::cin>>shipChoice;
     if(shipChoice==1){
@@ -30,7 +30,7 @@ Game::Game(){
         this->newPlayer->setDamage(100);
     }else if (shipChoice == 2){
         this->newPlayer->setHealth(80);
-        this->newPlayer->setDamage(25);
+        this->newPlayer->setDamage(20);
     }else if (shipChoice == 3){
         this->newPlayer->setHealth(150);
         this->newPlayer->setDamage(6);
