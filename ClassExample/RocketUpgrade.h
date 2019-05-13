@@ -10,7 +10,7 @@
 
 class RocketUpgrade : public Item{
 public:
-    RocketUpgrade(std::string description,int modifier);
+    RocketUpgrade(std::string description,int modifier,bool armor);
     void attribute();
 };
 

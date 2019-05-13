@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/c
 CMakeFiles/ClassExample.dir/all:
 	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/depend
 	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target ClassExample"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 "Built target ClassExample"
 .PHONY : CMakeFiles/ClassExample.dir/all
 
 # Include target in all.
@@ -81,7 +81,7 @@ all: CMakeFiles/ClassExample.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ClassExample.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles 16
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ClassExample.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/ClassExample.dir/rule

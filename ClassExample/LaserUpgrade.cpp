@@ -4,7 +4,7 @@
 
 #include "LaserUpgrade.h"
 
-LaserUpgrade::LaserUpgrade(std::string description, int modifier) : Item(description, modifier){
+LaserUpgrade::LaserUpgrade(std::string description, int modifier,bool armor) : Item(description, modifier, armor){
     //inherited from item base class
 }
 

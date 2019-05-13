@@ -6,11 +6,27 @@
 
 #IncludeRegexTransform: 
 
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Boss.cpp
+Boss.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Boss.h
+
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Boss.h
+Enemy.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.h
+
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Bug.cpp
+Bug.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Bug.h
+
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Bug.h
 Enemy.h
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.h
 Player.h
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Player.h
+
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.cpp
+Enemy.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.h
 
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.h
 string
@@ -32,15 +48,35 @@ Map.h
 random
 -
 
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.cpp
+Item.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
+
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
 string
 -
 iostream
 -
 
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/ItemContainer.cpp
+ItemContainer.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/ItemContainer.h
+
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/ItemContainer.h
 Item.h
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
+
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/LaserUpgrade.cpp
+LaserUpgrade.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/LaserUpgrade.h
+
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/LaserUpgrade.h
+Item.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
+
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Map.cpp
+Map.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Map.h
 
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Map.h
 Room.h
@@ -63,6 +99,16 @@ Rebels.h
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Rebels.h
 RockPeople.h
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/RockPeople.h
+RocketUpgrade.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/RocketUpgrade.h
+LaserUpgrade.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/LaserUpgrade.h
+Boss.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Boss.h
+
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Player.cpp
+Player.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Player.h
 
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Player.h
 iostream
@@ -72,9 +118,17 @@ vector
 Item.h
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
 
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Rebels.cpp
+Rebels.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Rebels.h
+
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Rebels.h
 Enemy.h
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.h
+
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Robot.cpp
+Robot.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Robot.h
 
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Robot.h
 Enemy.h
@@ -82,9 +136,27 @@ Enemy.h
 Player.h
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Player.h
 
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/RockPeople.cpp
+RockPeople.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/RockPeople.h
+Game.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Game.h
+
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/RockPeople.h
 Enemy.h
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.h
+
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/RocketUpgrade.cpp
+RocketUpgrade.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/RocketUpgrade.h
+
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/RocketUpgrade.h
+Item.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
+
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Room.cpp
+Room.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Room.h
 
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Room.h
 string
@@ -95,4 +167,12 @@ Enemy.h
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.h
 ItemContainer.h
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/ItemContainer.h
+
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/main.cpp
+iostream
+-
+Player.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Player.h
+Game.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Game.h
 

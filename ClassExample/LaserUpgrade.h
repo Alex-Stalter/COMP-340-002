@@ -10,7 +10,7 @@
 
 class LaserUpgrade : public Item {
 public:
-    LaserUpgrade(std::string description,int modifier);
+    LaserUpgrade(std::string description,int modifier, bool armor);
     void attribute();
 private:
 

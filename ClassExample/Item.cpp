@@ -23,3 +23,8 @@ bool Item::getArmor() {
     return this->armor;
 }
 
+void Item::setModifier(int mod) {
+    this->modifier = mod;
+
+}
+

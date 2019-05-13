@@ -4,7 +4,7 @@
 
 #include "RocketUpgrade.h"
 
-RocketUpgrade::RocketUpgrade(std::string description, int modifier) : Item(description, modifier){
+RocketUpgrade::RocketUpgrade(std::string description, int modifier,bool armor) : Item(description, modifier, armor){
     //inherited from item base class
 }
 
