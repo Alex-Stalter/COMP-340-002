@@ -21,6 +21,7 @@ CMakeFiles/ClassExample.dir/Game.cpp.o: ../Bug.h
 CMakeFiles/ClassExample.dir/Game.cpp.o: ../Enemy.h
 CMakeFiles/ClassExample.dir/Game.cpp.o: ../Game.cpp
 CMakeFiles/ClassExample.dir/Game.cpp.o: ../Game.h
+CMakeFiles/ClassExample.dir/Game.cpp.o: ../HullUpgrade.h
 CMakeFiles/ClassExample.dir/Game.cpp.o: ../Item.h
 CMakeFiles/ClassExample.dir/Game.cpp.o: ../ItemContainer.h
 CMakeFiles/ClassExample.dir/Game.cpp.o: ../LaserUpgrade.h
@@ -31,6 +32,10 @@ CMakeFiles/ClassExample.dir/Game.cpp.o: ../Robot.h
 CMakeFiles/ClassExample.dir/Game.cpp.o: ../RockPeople.h
 CMakeFiles/ClassExample.dir/Game.cpp.o: ../RocketUpgrade.h
 CMakeFiles/ClassExample.dir/Game.cpp.o: ../Room.h
+
+CMakeFiles/ClassExample.dir/HullUpgrade.cpp.o: ../HullUpgrade.cpp
+CMakeFiles/ClassExample.dir/HullUpgrade.cpp.o: ../HullUpgrade.h
+CMakeFiles/ClassExample.dir/HullUpgrade.cpp.o: ../Item.h
 
 CMakeFiles/ClassExample.dir/Item.cpp.o: ../Item.cpp
 CMakeFiles/ClassExample.dir/Item.cpp.o: ../Item.h
@@ -46,6 +51,7 @@ CMakeFiles/ClassExample.dir/LaserUpgrade.cpp.o: ../LaserUpgrade.h
 CMakeFiles/ClassExample.dir/Map.cpp.o: ../Boss.h
 CMakeFiles/ClassExample.dir/Map.cpp.o: ../Bug.h
 CMakeFiles/ClassExample.dir/Map.cpp.o: ../Enemy.h
+CMakeFiles/ClassExample.dir/Map.cpp.o: ../HullUpgrade.h
 CMakeFiles/ClassExample.dir/Map.cpp.o: ../Item.h
 CMakeFiles/ClassExample.dir/Map.cpp.o: ../ItemContainer.h
 CMakeFiles/ClassExample.dir/Map.cpp.o: ../LaserUpgrade.h
@@ -77,6 +83,7 @@ CMakeFiles/ClassExample.dir/RockPeople.cpp.o: ../Boss.h
 CMakeFiles/ClassExample.dir/RockPeople.cpp.o: ../Bug.h
 CMakeFiles/ClassExample.dir/RockPeople.cpp.o: ../Enemy.h
 CMakeFiles/ClassExample.dir/RockPeople.cpp.o: ../Game.h
+CMakeFiles/ClassExample.dir/RockPeople.cpp.o: ../HullUpgrade.h
 CMakeFiles/ClassExample.dir/RockPeople.cpp.o: ../Item.h
 CMakeFiles/ClassExample.dir/RockPeople.cpp.o: ../ItemContainer.h
 CMakeFiles/ClassExample.dir/RockPeople.cpp.o: ../LaserUpgrade.h
@@ -103,6 +110,7 @@ CMakeFiles/ClassExample.dir/main.cpp.o: ../Boss.h
 CMakeFiles/ClassExample.dir/main.cpp.o: ../Bug.h
 CMakeFiles/ClassExample.dir/main.cpp.o: ../Enemy.h
 CMakeFiles/ClassExample.dir/main.cpp.o: ../Game.h
+CMakeFiles/ClassExample.dir/main.cpp.o: ../HullUpgrade.h
 CMakeFiles/ClassExample.dir/main.cpp.o: ../Item.h
 CMakeFiles/ClassExample.dir/main.cpp.o: ../ItemContainer.h
 CMakeFiles/ClassExample.dir/main.cpp.o: ../LaserUpgrade.h

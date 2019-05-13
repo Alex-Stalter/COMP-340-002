@@ -68,7 +68,7 @@ void Map::createRooms(){
     Enemy* scoutRock = new RockPeople(0,0,1, this->itemList.back(),"");
     this->itemList.pop_back();
 
-    Enemy* boos = new Boss(0,0,3,nullptr,"");
+    Enemy* boss = new Boss(0,0,3,nullptr,"");
     
 
     ItemContainer* box = new ItemContainer(lzr10);
@@ -89,11 +89,11 @@ void Map::createRooms(){
     Room* ten = new Room("Sector 10: Andromeda galaxy",false, fighterRobot, nullptr);
     Room* eleven = new Room("Sector 11: Big dipper. It looks like there is something in the the dip of the dipper..",true, nullptr, barrel);
     Room* twelve = new Room("Sector 12: Black Hole!!",false, scoutRock, nullptr);
-    Room* thirteen = new Room("Sector 13: Astroid field",false, fighterRock, nullptr);
-    Room* fourteen = new Room("Sector 14: Orion's Belt",false, heavyRobot, nullptr);
-    Room* fifteen = new Room("Sector 15: Phobos",false, scoutRobot, nullptr);
-    Room* sixteen = new Room("Sector 16: Kepler 452b",false, scoutBug, nullptr);
-    Room* bossRoom = new Room("Unkown Sector",false, boos, nullptr);
+    Room* thirteen = new Room("Sector 13: Asteroid field. You can see a ship among the asteroids.",false, fighterRock, nullptr);
+    Room* fourteen = new Room("Sector 14: Orion's Belt. You see a very angular ship across the sector.",false, heavyRobot, nullptr);
+    Room* fifteen = new Room("Sector 15: Phobos. An enemy ship seems to linger on the outskirts of this sector.",false, scoutRobot, nullptr);
+    Room* sixteen = new Room("Sector 16: Kepler 452b. ",false, scoutBug, nullptr);
+    Room* bossRoom = new Room("Unknown Sector...ERROR please reboot system /RADAR_OFFLINE/ navigation is down.",false, boss, nullptr);
     this->roomList.push_back(one);
     this->roomList.push_back(two);
     this->roomList.push_back(three);

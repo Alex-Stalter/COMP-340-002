@@ -22,6 +22,7 @@ CMakeFiles/ClassExample.dir/Game.cpp.o
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Game.cpp
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Game.h
+ /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/HullUpgrade.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/ItemContainer.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/LaserUpgrade.h
@@ -32,6 +33,10 @@ CMakeFiles/ClassExample.dir/Game.cpp.o
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/RockPeople.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/RocketUpgrade.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Room.h
+CMakeFiles/ClassExample.dir/HullUpgrade.cpp.o
+ /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/HullUpgrade.cpp
+ /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/HullUpgrade.h
+ /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
 CMakeFiles/ClassExample.dir/Item.cpp.o
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.cpp
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
@@ -47,6 +52,7 @@ CMakeFiles/ClassExample.dir/Map.cpp.o
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Boss.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Bug.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.h
+ /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/HullUpgrade.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/ItemContainer.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/LaserUpgrade.h
@@ -78,6 +84,7 @@ CMakeFiles/ClassExample.dir/RockPeople.cpp.o
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Bug.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Game.h
+ /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/HullUpgrade.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/ItemContainer.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/LaserUpgrade.h
@@ -104,6 +111,7 @@ CMakeFiles/ClassExample.dir/main.cpp.o
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Bug.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Enemy.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Game.h
+ /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/HullUpgrade.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/ItemContainer.h
  /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/LaserUpgrade.h

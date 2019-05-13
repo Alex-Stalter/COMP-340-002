@@ -27,7 +27,7 @@ Game::Game(){
     std::cin>>shipChoice;
     if(shipChoice==1){
         this->newPlayer->setHealth(100);
-        this->newPlayer->setDamage(10);
+        this->newPlayer->setDamage(100);
     }else if (shipChoice == 2){
         this->newPlayer->setHealth(80);
         this->newPlayer->setDamage(20);
@@ -104,7 +104,7 @@ void Game::combat() {
                         h->attribute();
                     }
                 }
-            }else if("Check"){
+            }else if(this->secondInput=="Check"){
                 std::cout<<"Your health is: "<<this->newPlayer->getHealth()<<std::endl;
                 std::cout<<"Your rocket attack is: "<<this->newPlayer->getRocket()<<std::endl;
                 std::cout<<"Your laser attack is: "<<this->newPlayer->getLaser()<<std::endl;
@@ -187,7 +187,7 @@ void Game::instatiateGame() {
             if (this->userInput == "Search") {
                 if(this->currentRoom->getBox()== nullptr){
                     std::cout<<"you find nothing of interest here"<<std::endl;
-                }else if (this->secondInput == "Debris"||this->secondInput=="Station"||this->secondInput=="Junk") {
+                }else if (this->secondInput == "Debris"||this->secondInput=="Station"||this->secondInput=="Junk"||this->secondInput=="Asteroid") {
                     std::cout << "In the debris of a collision you find an upgrade." << std::endl;
                 } else if (this->secondInput == "Ship") {
                     std::cout << "You search through the wreckage of the ship you destroyed and find an upgrade."
@@ -293,7 +293,8 @@ void Game::instatiateGame() {
 
     }
     if(this->newPlayer->getHealth()>0&&this->userInput!="Give"&&this->secondInput!="Up"){
-        std::cout<<"You have defeated the rebel flagship and freed the solar system from their evil reign!"<<std::endl;
+        std::cout<<"You have defeated the rebel flagship and freed the solar system from their evil reign! \n"
+                   " You can finally tak your ship back home after saving the system."<<std::endl;
     }else{
         std::cout<<"Your ship breaks apart and you are sucked out into space dying immediately."<<std::endl;
     }
