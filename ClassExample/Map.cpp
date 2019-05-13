@@ -14,12 +14,15 @@ Map::~Map(){
 
 }
 void Map::createRooms(){
+<<<<<<< HEAD
+=======
     Item* lzr5 = new LaserUpgrade("sLaser", 5,false);
     Item* lzr10 = new LaserUpgrade("mLaser", 10,false);
     Item* lzr15 = new LaserUpgrade("gLaser", 15,false);
     Item* rkt5 = new RocketUpgrade("sRocket", 5,false);
     Item* rkt10 = new RocketUpgrade("mRocket", 10,false);
     Item* rkt15 = new RocketUpgrade("gRocket", 15,false);
+>>>>>>> master
 
     this->itemList.push_back(rkt15);
 
@@ -37,26 +40,29 @@ void Map::createRooms(){
 
     Enemy* boos = new Boss(0,0,3,nullptr,"");
 
-
+    LaserUpgrade* lzr5 = new LaserUpgrade("sLaser", 5,false);
+    LaserUpgrade* lzr10 = new LaserUpgrade("mLaser", 10,false);
+    LaserUpgrade* lzr15 = new LaserUpgrade("gLaser", 15,false);
+    RocketUpgrade* rkt5 = new RocketUpgrade("sRocket", 5,false);
 
 
     ItemContainer* box = new ItemContainer(lzr10);
     ItemContainer* crate = new ItemContainer(rkt5);
-    ItemContainer* barrel = new ItemContainer(lzr15);
-    ItemContainer* debris = new ItemContainer(rkt10);
+    ItemContainer* barrel = new ItemContainer(nullptr);
+    ItemContainer* debris = new ItemContainer(nullptr);
     ItemContainer* debris1 = new ItemContainer(lzr5);
 
-    Room* one = new Room("Sector 1: Planet X",false, nullptr, debris1);
-    Room* two = new Room("Sector 2: Callisto",true, nullptr, box);
+    Room* one = new Room("Sector 1: Planet X. There is a small cluster of asteroids, and they are orbiting and crashing into one another, bits and pieces are flying everywhere.",false, nullptr, debris1);
+    Room* two = new Room("Sector 2: Callisto. You see a big piece of space junk floating by the ship.",true, nullptr, box);
     Room* three = new Room("Sector 3: Geminids",false, fighterBug, nullptr);
     Room* four = new Room("Sector 4: Titan",false, destroyerBug, nullptr);
-    Room* five = new Room("Sector 5: Orion Nebula",false, nullptr, crate);
+    Room* five = new Room("Sector 5: Orion Nebula. What looks like half of an exploded spaceship is up ahead. ",false, nullptr, crate);
     Room* six = new Room("Sector 6: Enceladus",false, heavyRebel, nullptr);
     Room* seven = new Room("Sector 7: Horesehead Nebula",false, nullptr, nullptr );
-    Room* eight = new Room("Sector 8: Helix",false, scoutBug, nullptr);
-    Room* nine = new Room("Sector 9: Perseus",false, nullptr, debris);
+    Room* eight = new Room("Sector 8: Helix",false, scoutRebel, nullptr);
+    Room* nine = new Room("Sector 9: Perseus. You've never seen such a shiny asteroid! It looks rare. ",false, nullptr, debris);
     Room* ten = new Room("Sector 10: Andromeda galaxy",false, fighterRobot, nullptr);
-    Room* eleven = new Room("Sector 11: Big dipper",true, nullptr, barrel);
+    Room* eleven = new Room("Sector 11: Big dipper. It looks like there is something in the the dip of the dipper..",true, nullptr, barrel);
     Room* twelve = new Room("Sector 12: Black Hole!!",false, scoutRock, nullptr);
     Room* thirteen = new Room("Sector 13: Astroid field",false, fighterRock, nullptr);
     Room* fourteen = new Room("Sector 14: Orion's Belt",false, heavyRobot, nullptr);
