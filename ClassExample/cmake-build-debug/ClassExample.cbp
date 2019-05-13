@@ -104,6 +104,12 @@
 		<Unit filename="/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Game.h">
 			<Option target="ClassExample"/>
 		</Unit>
+		<Unit filename="/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/HullUpgrade.cpp">
+			<Option target="ClassExample"/>
+		</Unit>
+		<Unit filename="/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/HullUpgrade.h">
+			<Option target="ClassExample"/>
+		</Unit>
 		<Unit filename="/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.cpp">
 			<Option target="ClassExample"/>
 		</Unit>

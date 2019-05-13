@@ -33,6 +33,7 @@ void Map::createRooms(){
 
 
     this->itemList.push_back(rkt15);
+    std::shuffle(this->itemList.begin(),this->itemList.end(),std::mt19937(std::random_device()()));
     this->itemList.push_back(hull1);
     this->itemList.push_back(hull2);
     this->itemList.push_back(hull3);
