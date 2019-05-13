@@ -14,14 +14,17 @@ Map::~Map(){
 
 }
 void Map::createRooms(){
-    Item* lzr5 = new LaserUpgrade("sLaser1", 5,false);
-    Item* lzr10 = new LaserUpgrade("mLaser1", 10,false);
-    Item* lzr15 = new LaserUpgrade("gLaser1", 15,false);
-    Item* rkt5 = new RocketUpgrade("sRocket1", 5,false);
-    Item* rkt10 = new RocketUpgrade("mRocket1", 10,false);
+    Item* lzr5 = new LaserUpgrade("sLaser", 5,false);
+    Item* lzr10 = new LaserUpgrade("mLaser", 10,false);
+    Item* lzr15 = new LaserUpgrade("gLaser", 15,false);
+    Item* rkt5 = new RocketUpgrade("sRocket", 5,false);
+    Item* rkt10 = new RocketUpgrade("mRocket", 10,false);
     Item* rkt15 = new RocketUpgrade("gRocket", 15,false);
 
-    Enemy* scoutBug = new Bug(0,0,1, nullptr,"");
+    this->itemList.push_back(rkt15);
+
+    Enemy* scoutBug = new Bug(0,0,1, this->itemList.back(),"");
+    this->itemList.pop_back();
     Enemy* fighterBug = new Bug(0,0,2, nullptr,"");
     Enemy* destroyerBug = new Bug(0,0,3, nullptr,"");
     Enemy* scoutRobot = new Robot(0,0,1, nullptr,"");
@@ -31,6 +34,7 @@ void Map::createRooms(){
     Enemy* fighterRock = new RockPeople(0,0,2, nullptr,"");
     Enemy* heavyRebel = new Rebels(0,0,3, nullptr,"");
     Enemy* scoutRock = new RockPeople(0,0,1, nullptr,"");
+
     Enemy* boos = new Boss(0,0,3,nullptr,"");
 
 
