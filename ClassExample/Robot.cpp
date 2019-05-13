@@ -11,15 +11,15 @@ Robot::Robot(int health, int attack, int shipVal, Item* myItem,std::string Class
     this->shipVal = shipVal;
     this->setItem(myItem);
     if(this->shipVal==1){
-        this->setHealth(45);
+        this->setHealth(60);
         this->setAttack(6);
         this->setClass("Scout");
     }else if(this->shipVal==2){
-        this->setHealth(50);
+        this->setHealth(55);
         this->setAttack(4);
         this->setClass("Fighter");
     }else if(this->shipVal==3){
-        this->setHealth(60);
+        this->setHealth(70);
         this->setAttack(3);
         this->setClass("Destroyer");
     }
