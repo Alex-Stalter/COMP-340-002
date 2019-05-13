@@ -5,7 +5,7 @@
 #include "Bug.h"
 
 
-Bug::Bug(int health, int attack, int shipVal, Item* myItem, std::string enemyClass) : Enemy(health, attack, myItem, enemyClass) {
+Bug::Bug(int health, int attack, int shipVal, Item* myItem, std::string Class) : Enemy(health, attack, myItem, Class) {
     this->shipVal = shipVal;
     this->setItem(myItem);
     if(this->shipVal==1){
@@ -27,6 +27,6 @@ void Bug::taunt() {
 }
 
 void Bug::firstGlance() {
-    std::cout<<"A sleek black and red ship zooms up to face Commander " << myPlayer->getName()<< "'s ship."
+    std::cout<<"A sleek black and red ship zooms up to face the Commander's ship.\n"
                                    << " It's lasers are powering up!" <<std::endl;
 }
