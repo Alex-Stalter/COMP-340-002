@@ -19,10 +19,7 @@ public:
     void firstGlance();
 
 private:
-
-    Item* myItem;
     int shipVal;
-    int itemVal;
 };
 
 

@@ -12,14 +12,12 @@
 
 class Bug : public Enemy {
 public:
-    Bug(int health, int attack, int shipVal, Item* myItem,std::string enemyClass);
-
+    Bug(int health, int attack, int shipVal, Item* myItem,std::string Class);
     void taunt();
     void firstGlance();
 
 private:
-
-    Player* myPlayer;
+    Item* myItem;
     int shipVal;
 };
 
