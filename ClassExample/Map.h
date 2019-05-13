@@ -7,6 +7,8 @@
 #include "Room.h"
 #include "Player.h"
 #include <vector>
+#include <random>
+#include <algorithm>
 #include "ItemContainer.h"
 #include "Enemy.h"
 #include "Item.h"
@@ -15,6 +17,7 @@
 #include "Rebels.h"
 #include "RockPeople.h"
 #include "RocketUpgrade.h"
+#include "HullUpgrade.h"
 #include "LaserUpgrade.h"
 #include "Boss.h"
 #include <algorithm>

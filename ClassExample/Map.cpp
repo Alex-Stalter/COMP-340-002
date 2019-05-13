@@ -21,30 +21,67 @@ void Map::createRooms(){
     Item* rkt5 = new RocketUpgrade("sRocket", 5,false);
     Item* rkt10 = new RocketUpgrade("mRocket", 10,false);
     Item* rkt15 = new RocketUpgrade("gRocket", 15,false);
+    Item* hull1 = new HullUpgrade("sHull", 2,true);
+    Item* hull2 = new HullUpgrade("s1Hull", 4,true);
+    Item* hull3 = new HullUpgrade("s2Hull", 6,true);
+    Item* hull4 = new HullUpgrade("s3Hull", 8,true);
+    Item* hull5 = new HullUpgrade("mHull", 10,true);
+    Item* hull6 = new HullUpgrade("m1Hull", 12,true);
+    Item* hull7 = new HullUpgrade("m2Hull", 14,true);
+    Item* hull8 = new HullUpgrade("lHull", 16,true);
+    Item* hull9 = new HullUpgrade("lgHull", 20,true);
 
 
     this->itemList.push_back(rkt15);
     std::shuffle(this->itemList.begin(),this->itemList.end(),std::mt19937(std::random_device()()));
+    this->itemList.push_back(hull1);
+    this->itemList.push_back(hull2);
+    this->itemList.push_back(hull3);
+    this->itemList.push_back(hull4);
+    this->itemList.push_back(hull5);
+    this->itemList.push_back(hull6);
+    this->itemList.push_back(hull7);
+    this->itemList.push_back(hull8);
+    this->itemList.push_back(hull9);
+
+    //knowledge courtesy of https://en.cppreference.com/w/cpp/algorithm/random_shuffle
+    std::random_device rd;
+    std::mt19937 g(rd());
+
+    //use algorithm shuffle
+    auto i = itemList.begin();
+    auto k = itemList.end();
+    std::shuffle(i, k, g);
+
 
     Enemy* scoutBug = new Bug(0,0,1, this->itemList.back(),"");
     this->itemList.pop_back();
-    Enemy* fighterBug = new Bug(0,0,2, nullptr,"");
-    Enemy* destroyerBug = new Bug(0,0,3, nullptr,"");
-    Enemy* scoutRobot = new Robot(0,0,1, nullptr,"");
-    Enemy* fighterRobot = new Robot(0,0,2, nullptr,"");
-    Enemy*  heavyRobot= new Robot(0,0,3, nullptr,"");
-    Enemy* scoutRebel = new Rebels(0,0,1, nullptr,"");
-    Enemy* fighterRock = new RockPeople(0,0,2, nullptr,"");
-    Enemy* heavyRebel = new Rebels(0,0,3, nullptr,"");
-    Enemy* scoutRock = new RockPeople(0,0,1, nullptr,"");
+    Enemy* fighterBug = new Bug(0,0,2, this->itemList.back(),"");
+    this->itemList.pop_back();
+    Enemy* destroyerBug = new Bug(0,0,3, this->itemList.back(),"");
+    this->itemList.pop_back();
+    Enemy* scoutRobot = new Robot(0,0,1, this->itemList.back(),"");
+    this->itemList.pop_back();
+    Enemy* fighterRobot = new Robot(0,0,2, this->itemList.back(),"");
+    this->itemList.pop_back();
+    Enemy*  heavyRobot= new Robot(0,0,3, this->itemList.back(),"");
+    this->itemList.pop_back();
+    Enemy* scoutRebel = new Rebels(0,0,1, this->itemList.back(),"");
+    this->itemList.pop_back();
+    Enemy* fighterRock = new RockPeople(0,0,2, this->itemList.back(),"");
+    this->itemList.pop_back();
+    Enemy* heavyRebel = new Rebels(0,0,3, this->itemList.back(),"");
+    this->itemList.pop_back();
+    Enemy* scoutRock = new RockPeople(0,0,1, this->itemList.back(),"");
+    this->itemList.pop_back();
 
     Enemy* boos = new Boss(0,0,3,nullptr,"");
     
 
     ItemContainer* box = new ItemContainer(lzr10);
     ItemContainer* crate = new ItemContainer(rkt5);
-    ItemContainer* barrel = new ItemContainer(nullptr);
-    ItemContainer* debris = new ItemContainer(nullptr);
+    ItemContainer* barrel = new ItemContainer(lzr15);
+    ItemContainer* debris = new ItemContainer(rkt10);
     ItemContainer* debris1 = new ItemContainer(lzr5);
 
     Room* one = new Room("Sector 1: Planet X. There is a small cluster of asteroids, and they are orbiting and crashing into one another, bits and pieces are flying everywhere.",false, nullptr, debris1);
