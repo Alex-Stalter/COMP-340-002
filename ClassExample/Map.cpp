@@ -24,6 +24,7 @@ void Map::createRooms(){
 
 
     this->itemList.push_back(rkt15);
+    std::shuffle(this->itemList.begin(),this->itemList.end(),std::mt19937(std::random_device()()));
 
     Enemy* scoutBug = new Bug(0,0,1, this->itemList.back(),"");
     this->itemList.pop_back();

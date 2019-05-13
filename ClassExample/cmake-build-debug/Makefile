@@ -231,6 +231,33 @@ Game.cpp.s:
 	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/Game.cpp.s
 .PHONY : Game.cpp.s
 
+HullUpgrade.o: HullUpgrade.cpp.o
+
+.PHONY : HullUpgrade.o
+
+# target to build an object file
+HullUpgrade.cpp.o:
+	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/HullUpgrade.cpp.o
+.PHONY : HullUpgrade.cpp.o
+
+HullUpgrade.i: HullUpgrade.cpp.i
+
+.PHONY : HullUpgrade.i
+
+# target to preprocess a source file
+HullUpgrade.cpp.i:
+	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/HullUpgrade.cpp.i
+.PHONY : HullUpgrade.cpp.i
+
+HullUpgrade.s: HullUpgrade.cpp.s
+
+.PHONY : HullUpgrade.s
+
+# target to generate assembly for a file
+HullUpgrade.cpp.s:
+	$(MAKE) -f CMakeFiles/ClassExample.dir/build.make CMakeFiles/ClassExample.dir/HullUpgrade.cpp.s
+.PHONY : HullUpgrade.cpp.s
+
 Item.o: Item.cpp.o
 
 .PHONY : Item.o
@@ -549,6 +576,9 @@ help:
 	@echo "... Game.o"
 	@echo "... Game.i"
 	@echo "... Game.s"
+	@echo "... HullUpgrade.o"
+	@echo "... HullUpgrade.i"
+	@echo "... HullUpgrade.s"
 	@echo "... Item.o"
 	@echo "... Item.i"
 	@echo "... Item.s"
