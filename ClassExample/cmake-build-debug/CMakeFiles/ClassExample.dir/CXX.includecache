@@ -24,18 +24,6 @@ iostream
 Item.h
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
 
-/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Game.cpp
-iostream
--
-Game.h
-/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Game.h
-
-/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Game.h
-Map.h
-/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Map.h
-random
--
-
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
 string
 -
@@ -49,6 +37,10 @@ Item.h
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/LaserUpgrade.h
 Item.h
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
+
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Map.cpp
+Map.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Map.h
 
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Map.h
 Room.h
