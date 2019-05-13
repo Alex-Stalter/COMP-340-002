@@ -24,6 +24,22 @@ iostream
 Item.h
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
 
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Game.cpp
+iostream
+-
+Game.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Game.h
+
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Game.h
+Map.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Map.h
+random
+-
+
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/HullUpgrade.h
+Item.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
+
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
 string
 -
@@ -38,16 +54,16 @@ Item.h
 Item.h
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Item.h
 
-/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Map.cpp
-Map.h
-/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Map.h
-
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Map.h
 Room.h
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Room.h
 Player.h
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Player.h
 vector
+-
+random
+-
+algorithm
 -
 ItemContainer.h
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/ItemContainer.h
@@ -65,10 +81,16 @@ RockPeople.h
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/RockPeople.h
 RocketUpgrade.h
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/RocketUpgrade.h
+HullUpgrade.h
+/Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/HullUpgrade.h
 LaserUpgrade.h
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/LaserUpgrade.h
 Boss.h
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Boss.h
+algorithm
+-
+random
+-
 
 /Users/alexstalter/Desktop/GitHub/COMP-340-002/ClassExample/Player.h
 iostream
